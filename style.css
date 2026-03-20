@@ -964,6 +964,13 @@ section:not(#hero) {
   font-size: 20px;
   margin-bottom: 10px;
 }
+
+.bio-card__icon svg {
+  width: 20px;
+  height: 20px;
+  color: #c4b5fd;
+}
+
 .bio-card__title {
   font-size: 15px;
   font-weight: 700;
@@ -1123,6 +1130,13 @@ section:not(#hero) {
   font-size: 22px;
   margin-bottom: 10px;
 }
+
+.skill-card__icon svg {
+  width: 22px;
+  height: 22px;
+  color: #c4b5fd;
+}
+
 .skill-card__title {
   font-size: 14px;
   font-weight: 700;
@@ -1299,6 +1313,16 @@ section:not(#hero) {
 .project-banner--purple  { background: linear-gradient(135deg, #4c1d95, #1e1b4b); }
 .project-banner--fuchsia { background: linear-gradient(135deg, #701a75, #3b0764); }
 
+.project-banner__image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.28;
+  z-index: 0;
+}
+
 /* Grid texture overlay inside banner */
 .project-banner__grid {
   position: absolute;
@@ -1307,15 +1331,23 @@ section:not(#hero) {
     linear-gradient(rgba(255,255,255,0.06) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255,255,255,0.06) 1px, transparent 1px);
   background-size: 28px 28px;
+  z-index: 1;
 }
 
 /* Large floating emoji */
 .project-banner__emoji {
   font-size: 56px;
-  z-index: 1;
+  z-index: 2;
   filter: drop-shadow(0 0 20px rgba(255,255,255,0.15));
   animation: floatEmoji 6s ease-in-out infinite;
 }
+
+.project-banner__emoji svg {
+  width: 56px;
+  height: 56px;
+  color: #ffffff;
+}
+
 @keyframes floatEmoji {
   0%, 100% { transform: scale(1) rotate(0deg); }
   50%       { transform: scale(1.06) rotate(3deg); }
@@ -1324,6 +1356,7 @@ section:not(#hero) {
 .project-banner__period {
   position: absolute;
   top: 10px; right: 10px;
+  z-index: 3;
   padding: 4px 10px;
   border-radius: 8px;
   background: rgba(0,0,0,0.4);
@@ -1359,12 +1392,21 @@ section:not(#hero) {
 }
 
 .project-overlay__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   padding: 10px 18px;
   border-radius: 10px;
   font-size: 13px;
   font-weight: 600;
   transition: var(--transition);
   border: 1px solid;
+}
+
+.project-overlay__btn svg {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
 }
 .project-overlay__btn--gh {
   background: rgba(255,255,255,0.1);
@@ -1548,6 +1590,13 @@ section:not(#hero) {
   flex-shrink: 0;
   box-shadow: 0 0 20px rgba(139,92,246,0.3);
 }
+
+.exp-card__icon svg {
+  width: 20px;
+  height: 20px;
+  color: #ffffff;
+}
+
 .exp-card__icon--fuchsia {
   background: linear-gradient(135deg, #be185d, #7c3aed);
 }
@@ -1581,6 +1630,7 @@ section:not(#hero) {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 7px;
   margin-top: 14px;
   padding: 10px 14px;
   border-radius: 10px;
@@ -1592,6 +1642,12 @@ section:not(#hero) {
   text-decoration: none;
   line-height: 1;
   transition: var(--transition);
+}
+
+.exp-certificate-link svg {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
 }
 
 .exp-certificate-link:hover {
@@ -1641,6 +1697,13 @@ section:not(#hero) {
   font-size: 18px;
   flex-shrink: 0;
 }
+
+.cert-card__icon svg {
+  width: 18px;
+  height: 18px;
+  color: #ffffff;
+}
+
 .cert-card__title { color: #fff; font-size: 13px; font-weight: 600; }
 .cert-card__meta  { color: rgba(139,92,246,0.7); font-size: 11px; margin-top: 3px; }
 
@@ -1648,6 +1711,7 @@ section:not(#hero) {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 7px;
   margin-top: 7px;
   padding: 9px 13px;
   border-radius: 10px;
@@ -1659,6 +1723,12 @@ section:not(#hero) {
   text-decoration: none;
   line-height: 1;
   transition: var(--transition);
+}
+
+.cert-card__link svg {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
 }
 
 .cert-card__link:hover {
@@ -1768,6 +1838,7 @@ section:not(#hero) {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 7px;
   padding: 9px 14px;
   border-radius: 10px;
   background: rgba(8, 8, 16, 0.36);
@@ -1778,13 +1849,31 @@ section:not(#hero) {
   transition: var(--transition);
 }
 
+.ach-card__back-link svg {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
 .ach-card__back-link:hover {
   background: rgba(8, 8, 16, 0.52);
   border-color: rgba(255,255,255,0.42);
   color: #fff;
 }
 
-.ach-card__emoji { font-size: 34px; margin-bottom: 8px; }
+.ach-card__emoji {
+  font-size: 34px;
+  margin-bottom: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #f5f3ff;
+}
+
+.ach-card__emoji svg {
+  width: 34px;
+  height: 34px;
+}
 .ach-card__value {
   font-family: var(--font-heading);
   font-size: clamp(34px, 5vw, 46px);
@@ -1823,7 +1912,18 @@ section:not(#hero) {
   background: linear-gradient(to right, rgba(217,70,239,0.1), rgba(139,92,246,0.05));
   border-color: rgba(217,70,239,0.22);
 }
-.ach-strip__emoji { font-size: 28px; }
+.ach-strip__emoji {
+  font-size: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #f5f3ff;
+}
+
+.ach-strip__emoji svg {
+  width: 28px;
+  height: 28px;
+}
 .ach-strip__title { color: #fff; font-weight: 700; font-size: 13px; }
 .ach-strip__desc  { color: var(--color-text-muted); font-size: 11px; margin-top: 3px; }
 
