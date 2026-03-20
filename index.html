@@ -82,7 +82,9 @@
       <button class="nav-link"        data-section="about"        onclick="smoothScrollTo('about')">About</button>
       <button class="nav-link"        data-section="skills"       onclick="smoothScrollTo('skills')">Skills</button>
       <button class="nav-link"        data-section="projects"     onclick="smoothScrollTo('projects')">Projects</button>
-      <button class="nav-link"        data-section="experience"   onclick="smoothScrollTo('experience')">Certificates</button>
+      <button class="nav-link"        data-section="experience"   onclick="smoothScrollTo('experience')">Certificates
+        
+      </button>
       <button class="nav-link"        data-section="achievements" onclick="smoothScrollTo('achievements')">Achievements</button>
       <button class="nav-link"        data-section="contact"      onclick="smoothScrollTo('contact')">Contact</button>
     </div>
@@ -387,126 +389,143 @@
 
         <div class="section-header animate-fade-up">
           <p class="section-label">What I've Built</p>
-          <h2 class="section-title">Project <span class="gradient-text">Case Studies</span></h2>
+          <h2 class="section-title"><span class="gradient-text">Projects</span></h2>
+          <div class="section-underline"></div>
+        </div>
+
+        <div class="projects-showcase animate-fade-up">
+          <div class="projects-showcase-grid">
+            <article class="project-card project-card--mini">
+              <div class="project-body">
+                <div class="project-thumb">
+                  <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&q=80" alt="Property Hub project preview" loading="lazy" />
+                </div>
+                <h4 class="project-title">Property Hub</h4>
+                <div class="project-mini-details">
+                  <p class="project-desc">Architected a MERN-based web application to help landlords manage property listings, tenant information, and rent records through one centralized digital system; implemented RESTful APIs with Node.js and Express and designed MongoDB collections for efficient CRUD operations and reliable data management; collaborated on React frontend-backend integration to ensure seamless data flow, responsive UX, and accurate real-time updates across the platform.</p>
+                </div>
+                <div class="tech-tags">
+                  <span class="tech-tag">MongoDB</span>
+                  <span class="tech-tag">Express.js</span>
+                  <span class="tech-tag">React.js</span>
+                  <span class="tech-tag">Node.js</span>
+                </div>
+                <div class="project-actions">
+                  <a class="project-overlay__btn project-overlay__btn--gh" href="https://github.com/MariaTejaswi/PROPERTY-HUB" target="_blank" rel="noreferrer">View Source Code ↗</a>
+                  <a class="project-overlay__btn project-overlay__btn--live" href="https://the-property-hub.netlify.app/" target="_blank" rel="noreferrer">View Demo Live ↗</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card project-card--mini">
+              <div class="project-body">
+                <div class="project-thumb">
+                  <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1200&q=80" alt="Fashion Store project preview" loading="lazy" />
+                </div>
+                <h4 class="project-title">Fashion Store Website</h4>
+                <p class="project-desc">Developed essential e-commerce features including authentication, product browsing, dynamic search, cart management, and secure checkout, which enhanced user experience and improved overall navigation flow; crafted a responsive and visually appealing interface using Tailwind CSS to ensure consistent usability across mobile and desktop devices; engineered backend logic using PHP and MySQL to manage products, customer profiles, and order processing.</p>
+                <div class="tech-tags">
+                  <span class="tech-tag">PHP</span>
+                  <span class="tech-tag">HTML</span>
+                  <span class="tech-tag">Tailwind CSS</span>
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">MySQL</span>
+                </div>
+                <div class="project-actions">
+                  <a class="project-overlay__btn project-overlay__btn--gh" href="https://github.com/MariaTejaswi/FASHION_STORE" target="_blank" rel="noreferrer">View Source Code ↗</a>
+                  <a class="project-overlay__btn project-overlay__btn--live" href="#" target="_blank" rel="noreferrer">View Demo Live ↗</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card project-card--mini">
+              <div class="project-body">
+                <div class="project-thumb">
+                  <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80" alt="Predictive Maintenance System project preview" loading="lazy" />
+                </div>
+                <h4 class="project-title">Predictive Maintenance System</h4>
+                <p class="project-desc">Pre-processed the dataset using scikit-learn by handling missing values and normalising features, which improved model performance by 25% and reduced prediction error by 20%; performed feature engineering and trained advanced ML models, achieving 99.98% accuracy with XGBoost; deployed the trained model using Streamlit to deliver an intuitive interface for real-time predictions.</p>
+                <div class="tech-tags">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Machine Learning</span>
+                  <span class="tech-tag">XGBoost</span>
+                  <span class="tech-tag">Streamlit</span>
+                </div>
+                <div class="project-actions">
+                  <a class="project-overlay__btn project-overlay__btn--gh" href="https://github.com/yaswanthreddyyvs/System_Failure_Prediction" target="_blank" rel="noreferrer">View Source Code ↗</a>
+                  <a class="project-overlay__btn project-overlay__btn--live" href="https://systemfailureprediction-mtzhkew4xda9o6pqsrot9f.streamlit.app/" target="_blank" rel="noreferrer">View Demo Live ↗</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="section-header animate-fade-up">
+          <p class="section-label">Deep Dive</p>
+          <h2 class="section-title"><span class="gradient-text">Featured Case Studies</span></h2>
           <div class="section-underline"></div>
         </div>
 
         <div class="projects-grid">
+          <article class="project-card project-card--case animate-fade-up stagger-1">
+            <div class="project-banner project-banner--purple">
+              <div class="project-banner__grid"></div>
+              <div class="project-banner__emoji">🏠</div>
+              <div class="project-banner__period">Jun '25 - Jul '25</div>
+            </div>
 
-          <!-- Project 1 -->
-          <div class="project-card project-card--flip animate-fade-up stagger-1">
-            <div class="project-flip-inner">
-              <div class="project-face project-face--front">
-                <div class="project-banner project-banner--purple">
-                  <div class="project-banner__grid"></div>
-                  <div class="project-banner__emoji">🏠</div>
-                  <div class="project-banner__period">Jun '25 – Jul '25</div>
+            <div class="project-body project-body--case">
+              <h3 class="project-title">The Property Hub - Detailed Case Study</h3>
+              <p class="project-desc">
+                A property listing platform focused on helping users explore and manage
+                properties through a structured and user-friendly digital experience.
+              </p>
+
+              <div class="project-case-study project-case-study--detailed">
+                <div class="case-row">
+                  <p class="case-label">Problem</p>
+                  <p class="case-text">The real estate process often lacks a centralized digital platform where users can easily browse and manage property listings. Property information is usually scattered across different sources, making it difficult for users to access accurate details in one place. Additionally, property owners face challenges in efficiently managing multiple listings and updating information.</p>
                 </div>
-                <div class="project-body">
-                  <h3 class="project-title">The Property Hub</h3>
-                  <p class="project-desc">
-                    A full-stack MERN property management system for landlords to manage listings,
-                    tenants, and rent records through a centralized digital platform.
-                  </p>
+                <div class="case-row">
+                  <p class="case-label">Stack</p>
+                  <p class="case-text">The application was developed using HTML, CSS, and JavaScript for the frontend to create a responsive and interactive user interface. Version control and project management were handled using Git and GitHub, and the development environment was set up using Visual Studio Code. Backend technologies can be integrated if required.</p>
+                </div>
+                <div class="case-row">
+                  <p class="case-label">Architecture</p>
+                  <p class="case-text">The system follows a simple web application architecture where the frontend handles user interface and interactions. Users can browse available property listings and view detailed information about each property. Admin functionality supports adding, updating, and deleting listings. If a backend is integrated, it manages data flow and business logic for smooth communication between UI and stored data.</p>
+                </div>
+                <div class="case-row">
+                  <p class="case-label">Challenges</p>
                   <ul class="project-features">
-                    <li>Property listing and tenant management dashboard</li>
-                    <li>Rent tracking with centralized record maintenance</li>
-                    <li>REST API-based data flow for reliable CRUD operations</li>
-                    <li>Responsive React interface for smooth workflows</li>
+                    <li>Designing a clean and fully responsive interface across devices</li>
+                    <li>Organizing and presenting property data in a user-friendly structure</li>
+                    <li>Handling dynamic content updates while maintaining performance</li>
+                    <li>Ensuring smooth and intuitive navigation for users</li>
+                    <li>Structuring the project for future scalability and additions</li>
+                    <li>Maintaining consistency in design and layout throughout the app</li>
                   </ul>
-                  <div class="tech-tags">
-                    <span class="tech-tag">MongoDB</span>
-                    <span class="tech-tag">Express.js</span>
-                    <span class="tech-tag">React.js</span>
-                    <span class="tech-tag">Node.js</span>
-                  </div>
-                  <p class="project-flip-hint">Hover to view detailed case study</p>
+                </div>
+                <div class="case-row">
+                  <p class="case-label">Results</p>
+                  <p class="case-text">The project resulted in a functional property listing platform that allows users to easily explore and manage properties. It strengthened my understanding of frontend development, user interface design, and real-world project structuring. Overall, this project demonstrates my ability to build practical web applications and solve real-world problems effectively.</p>
                 </div>
               </div>
 
-              <div class="project-face project-face--back">
-                <div class="project-body project-body--back">
-                  <h3 class="project-title">Property Hub Case Study</h3>
-                  <div class="project-case-study">
-                    <div class="case-row">
-                      <p class="case-label">Problem</p>
-                      <p class="case-text">Landlords were managing properties, tenants, and rent records across spreadsheets and chat tools, which caused missed updates and inconsistent data.</p>
-                    </div>
-                    <div class="case-row">
-                      <p class="case-label">Approach</p>
-                      <p class="case-text">I designed a MERN architecture with role-based flows, REST APIs for core entities, and a React dashboard that keeps listing and rent data synchronized in real time.</p>
-                    </div>
-                    <div class="case-row">
-                      <p class="case-label">Outcome</p>
-                      <p class="case-text">The platform provides one source of truth for property operations and reduces manual follow-ups by centralizing rent tracking, tenant status, and listing updates.</p>
-                    </div>
-                  </div>
-                  <div class="project-actions">
-                    <a class="project-overlay__btn project-overlay__btn--gh"   href="https://github.com/MariaTejaswi/PROPERTY-HUB" target="_blank" rel="noreferrer">Source Code ↗</a>
-                    <a class="project-overlay__btn project-overlay__btn--live" href="https://the-property-hub.netlify.app/" target="_blank" rel="noreferrer">Live Demo ↗</a>
-                  </div>
-                </div>
+              <div class="project-actions">
+                <a class="project-overlay__btn project-overlay__btn--gh" href="https://github.com/MariaTejaswi/PROPERTY-HUB" target="_blank" rel="noreferrer">View Source Code ↗</a>
+                <a class="project-overlay__btn project-overlay__btn--live" href="https://the-property-hub.netlify.app/" target="_blank" rel="noreferrer">View Demo Live ↗</a>
+              </div>
+
+              <div class="tech-tags">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Git</span>
+                <span class="tech-tag">GitHub</span>
+                <span class="tech-tag">VS Code</span>
               </div>
             </div>
-          </div>
-
-          <!-- Project 2 -->
-          <div class="project-card project-card--flip animate-fade-up stagger-2">
-            <div class="project-flip-inner">
-              <div class="project-face project-face--front">
-                <div class="project-banner project-banner--fuchsia">
-                  <div class="project-banner__grid"></div>
-                  <div class="project-banner__emoji">👗</div>
-                  <div class="project-banner__period">Feb '25 – Apr '25</div>
-                </div>
-                <div class="project-body">
-                  <h3 class="project-title">Fashion Store Website</h3>
-                  <p class="project-desc">
-                    A fully-featured e-commerce fashion platform with authentication, product browsing,
-                    cart management, and secure checkout functionality.
-                  </p>
-                  <ul class="project-features">
-                    <li>User authentication with protected shopping flow</li>
-                    <li>Product browsing, filtering, and dynamic search experience</li>
-                    <li>Cart and checkout journey optimized for fewer drop-offs</li>
-                    <li>Responsive Tailwind-based interface for mobile and desktop</li>
-                  </ul>
-                  <div class="tech-tags">
-                    <span class="tech-tag">PHP</span>
-                    <span class="tech-tag">HTML</span>
-                    <span class="tech-tag">Tailwind CSS</span>
-                    <span class="tech-tag">JavaScript</span>
-                    <span class="tech-tag">MySQL</span>
-                  </div>
-                  <p class="project-flip-hint">Hover to view detailed case study</p>
-                </div>
-              </div>
-
-              <div class="project-face project-face--back">
-                <div class="project-body project-body--back">
-                  <h3 class="project-title">Fashion Store Case Study</h3>
-                  <div class="project-case-study">
-                    <div class="case-row">
-                      <p class="case-label">Problem</p>
-                      <p class="case-text">Small fashion stores need an affordable digital storefront with search, account management, and checkout, but often lack an integrated system.</p>
-                    </div>
-                    <div class="case-row">
-                      <p class="case-label">Approach</p>
-                      <p class="case-text">I built a responsive web app with authentication, catalog browsing, cart, and checkout. The backend uses PHP and MySQL to manage products, users, and orders.</p>
-                    </div>
-                    <div class="case-row">
-                      <p class="case-label">Outcome</p>
-                      <p class="case-text">The result is a smoother end-to-end shopping flow with better product discoverability and a maintainable admin data model for future scaling.</p>
-                    </div>
-                  </div>
-                  <div class="project-actions">
-                    <a class="project-overlay__btn project-overlay__btn--gh"   href="https://github.com/MariaTejaswi/FASHION_STORE" target="_blank" rel="noreferrer">Source Code ↗</a>
-                    <a class="project-overlay__btn project-overlay__btn--live" href="#" target="_blank" rel="noreferrer">Live Demo ↗</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          </article>
 
         </div>
       </div>
@@ -706,6 +725,21 @@
               <p class="ach-strip__desc">Neo Codeathon at Lovely Professional University · Apr '25</p>
             </div>
           </div>
+        </div>
+
+        <div class="learning-now-card animate-fade-up stagger-3">
+          <p class="learning-now-card__label">Currently Upskilling</p>
+          <h3 class="learning-now-card__title">What I'm Learning Now</h3>
+          <p class="learning-now-card__text">
+            I am currently deepening my understanding of
+            <span class="learning-tech">System Design</span>,
+            <span class="learning-tech">Scalability</span>,
+            <span class="learning-tech">Data Flow Modeling</span>, and
+            <span class="learning-tech">Architecture Patterns</span> while improving
+            <span class="learning-tech">Backend Development</span> and
+            <span class="learning-tech">Machine Learning</span> skills to build reliable,
+            data-driven solutions.
+          </p>
         </div>
 
       </div>
