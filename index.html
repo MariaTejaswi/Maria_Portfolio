@@ -1,63 +1,67 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<!-- ============================================================
+  <!-- ============================================================
      MARIA TEJASWI | FULL STACK DEVELOPER PORTFOLIO
      File: index.html
      Description: Main HTML structure - all sections of the portfolio
      ============================================================ -->
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Imandi Maria Tejaswi – Full Stack Developer & Software Developer" />
-  <meta name="author" content="Imandi Maria Tejaswi" />
-  <title>Maria Tejaswi | Full Stack Developer</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Imandi Maria Tejaswi – Full Stack Developer & Software Developer"
+    />
+    <meta name="author" content="Imandi Maria Tejaswi" />
+    <title>Maria Tejaswi | Full Stack Developer</title>
 
-  <!-- Favicon -->
-  <!-- <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👩‍💻</text></svg>" /> -->
+    <!-- Favicon -->
+    <!-- <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👩‍💻</text></svg>" /> -->
 
-  <!-- Google Fonts: Poppins (headings) + Inter (body) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <!-- Google Fonts: Poppins (headings) + Inter (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="style.css" />
-</head>
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-
-  <!-- ============================================================
+  <body>
+    <!-- ============================================================
        LOADING SCREEN
        Shows briefly while the page loads, then fades out
        ============================================================ -->
-  <div id="loading-screen">
-    <div class="loading-logo"></div>
-    <div class="loading-bar-track">
-      <div class="loading-bar-fill"></div>
+    <div id="loading-screen">
+      <div class="loading-logo"></div>
+      <div class="loading-bar-track">
+        <div class="loading-bar-fill"></div>
+      </div>
+      <p class="loading-label">LOADING PORTFOLIO...</p>
     </div>
-    <p class="loading-label">LOADING PORTFOLIO...</p>
-  </div>
 
-  <!-- ============================================================
+    <!-- ============================================================
        CUSTOM CURSOR (Desktop only)
        Small dot + large soft glow that follows the mouse
        ============================================================ -->
-  <div id="cursor-dot"></div>
-  <div id="cursor-glow"></div>
+    <div id="cursor-dot"></div>
+    <div id="cursor-glow"></div>
 
-  <!-- ============================================================
+    <!-- ============================================================
        SCROLL PROGRESS BAR
        Thin bar at very top showing how far the user has scrolled
        ============================================================ -->
-  <div id="scroll-progress-bar"></div>
+    <div id="scroll-progress-bar"></div>
 
-  <!-- ============================================================
+    <!-- ============================================================
        PARTICLE BACKGROUND
        Canvas-based animated dot network drawn behind all content
        ============================================================ -->
-  <canvas id="particles-canvas"></canvas>
+    <canvas id="particles-canvas"></canvas>
 
     <!-- ============================================================
       AMBIENT GRADIENT BLOBS
@@ -69,849 +73,1994 @@
       <div class="background-blob background-blob--three"></div>
     </div>
 
-  <!-- ============================================================
+    <!-- ============================================================
        NAVIGATION BAR
        Fixed at top. Becomes glassmorphism card on scroll.
        Active section is highlighted automatically via JS.
        ============================================================ -->
-  <nav id="navbar">
-    <div class="nav-logo" onclick="smoothScrollTo('hero')">Portfolio<span class="nav-logo-dot"></span></div>
+    <nav id="navbar">
+      <div class="nav-logo" onclick="smoothScrollTo('hero')">
+        Portfolio<span class="nav-logo-dot"></span>
+      </div>
 
-    <div class="nav-links" id="nav-links">
-      <button class="nav-link active" data-section="hero"         onclick="smoothScrollTo('hero')">Home</button>
-      <button class="nav-link"        data-section="about"        onclick="smoothScrollTo('about')">About</button>
-      <button class="nav-link"        data-section="skills"       onclick="smoothScrollTo('skills')">Skills</button>
-      <button class="nav-link"        data-section="projects"     onclick="smoothScrollTo('projects')">Projects</button>
-      <button class="nav-link"        data-section="experience"   onclick="smoothScrollTo('experience')">Certificates
-        
+      <div class="nav-links" id="nav-links">
+        <button
+          class="nav-link active"
+          data-section="hero"
+          onclick="smoothScrollTo('hero')"
+        >
+          Home
+        </button>
+        <button
+          class="nav-link"
+          data-section="about"
+          onclick="smoothScrollTo('about')"
+        >
+          About
+        </button>
+        <button
+          class="nav-link"
+          data-section="skills"
+          onclick="smoothScrollTo('skills')"
+        >
+          Skills
+        </button>
+        <button
+          class="nav-link"
+          data-section="projects"
+          onclick="smoothScrollTo('projects')"
+        >
+          Projects
+        </button>
+        <button
+          class="nav-link"
+          data-section="experience"
+          onclick="smoothScrollTo('experience')"
+        >
+          Certificates
+        </button>
+        <button
+          class="nav-link"
+          data-section="achievements"
+          onclick="smoothScrollTo('achievements')"
+        >
+          Achievements
+        </button>
+        <button
+          class="nav-link"
+          data-section="contact"
+          onclick="smoothScrollTo('contact')"
+        >
+          Contact
+        </button>
+      </div>
+
+      <a
+        class="nav-cv-btn nav-cv-btn--view"
+        href="https://drive.google.com/file/d/1W84buv1j4_QrpZnN_Lni4c_gk8qexblE/view"
+        target="_blank"
+        rel="noreferrer"
+        aria-label="View CV"
+        >View CV</a
+      >
+
+      <a
+        class="nav-cv-btn"
+        href="https://drive.google.com/uc?export=download&id=1W84buv1j4_QrpZnN_Lni4c_gk8qexblE"
+        target="_blank"
+        rel="noreferrer"
+        aria-label="Download CV"
+        >Download CV</a
+      >
+
+      <!-- Hamburger for mobile -->
+      <button
+        class="hamburger"
+        id="hamburger"
+        aria-label="Toggle menu"
+        onclick="toggleMobileMenu()"
+      >
+        <span></span><span></span><span></span>
       </button>
-      <button class="nav-link"        data-section="achievements" onclick="smoothScrollTo('achievements')">Achievements</button>
-      <button class="nav-link"        data-section="contact"      onclick="smoothScrollTo('contact')">Contact</button>
+    </nav>
+
+    <!-- Mobile Menu Dropdown -->
+    <div class="mobile-menu" id="mobile-menu">
+      <button
+        onclick="
+          smoothScrollTo('hero');
+          toggleMobileMenu();
+        "
+      >
+        Home
+      </button>
+      <button
+        onclick="
+          smoothScrollTo('about');
+          toggleMobileMenu();
+        "
+      >
+        About
+      </button>
+      <button
+        onclick="
+          smoothScrollTo('skills');
+          toggleMobileMenu();
+        "
+      >
+        Skills
+      </button>
+      <button
+        onclick="
+          smoothScrollTo('projects');
+          toggleMobileMenu();
+        "
+      >
+        Projects
+      </button>
+      <button
+        onclick="
+          smoothScrollTo('experience');
+          toggleMobileMenu();
+        "
+      >
+        Certificates
+      </button>
+      <button
+        onclick="
+          smoothScrollTo('achievements');
+          toggleMobileMenu();
+        "
+      >
+        Achievements
+      </button>
+      <button
+        onclick="
+          smoothScrollTo('contact');
+          toggleMobileMenu();
+        "
+      >
+        Contact
+      </button>
+      <a
+        class="mobile-menu-cv mobile-menu-cv--view"
+        href="https://drive.google.com/file/d/1W84buv1j4_QrpZnN_Lni4c_gk8qexblE/view"
+        target="_blank"
+        rel="noreferrer"
+        >View CV</a
+      >
+
+      <a
+        class="mobile-menu-cv"
+        href="https://drive.google.com/uc?export=download&id=1W84buv1j4_QrpZnN_Lni4c_gk8qexblE"
+        target="_blank"
+        rel="noreferrer"
+        >Download CV</a
+      >
     </div>
 
-    <a class="nav-cv-btn" href="https://drive.google.com/uc?export=download&id=1W84buv1j4_QrpZnN_Lni4c_gk8qexblE" target="_blank" rel="noreferrer" aria-label="Download CV">Download CV</a>
-
-    <!-- Hamburger for mobile -->
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu" onclick="toggleMobileMenu()">
-      <span></span><span></span><span></span>
-    </button>
-  </nav>
-
-  <!-- Mobile Menu Dropdown -->
-  <div class="mobile-menu" id="mobile-menu">
-    <button onclick="smoothScrollTo('hero');       toggleMobileMenu()">Home</button>
-    <button onclick="smoothScrollTo('about');      toggleMobileMenu()">About</button>
-    <button onclick="smoothScrollTo('skills');     toggleMobileMenu()">Skills</button>
-    <button onclick="smoothScrollTo('projects');   toggleMobileMenu()">Projects</button>
-    <button onclick="smoothScrollTo('experience'); toggleMobileMenu()">Certificates</button>
-    <button onclick="smoothScrollTo('achievements');toggleMobileMenu()">Achievements</button>
-    <button onclick="smoothScrollTo('contact');    toggleMobileMenu()">Contact</button>
-    <a class="mobile-menu-cv" href="https://drive.google.com/uc?export=download&id=1W84buv1j4_QrpZnN_Lni4c_gk8qexblE" target="_blank" rel="noreferrer">Download CV</a>
-  </div>
-
-  <!-- ============================================================
+    <!-- ============================================================
        MAIN CONTENT
        All sections are wrapped in <main> for semantic HTML
        ============================================================ -->
-  <main>
-
-    <!-- ========================================================
+    <main>
+      <!-- ========================================================
          SECTION 1: HERO
          Full-screen intro with avatar, name, typewriter effect,
          CTA buttons, and social links
          ======================================================== -->
-    <section id="hero">
-      <!-- Animated background orbs (CSS-only) -->
-      <div class="hero-orb hero-orb--left"></div>
-      <div class="hero-orb hero-orb--right"></div>
+      <section id="hero">
+        <!-- Animated background orbs (CSS-only) -->
+        <div class="hero-orb hero-orb--left"></div>
+        <div class="hero-orb hero-orb--right"></div>
 
-      <div class="hero-content animate-fade-up">
-
-        <!-- Profile Avatar with floating animation + orbit ring -->
-        <div class="avatar-wrapper">
-          <div class="avatar-circle">
-            <img class="avatar-photo" src="me.jpg" alt="Maria Tejaswi" loading="eager" decoding="async" />
+        <div class="hero-content animate-fade-up">
+          <!-- Profile Avatar with floating animation + orbit ring -->
+          <div class="avatar-wrapper">
+            <div class="avatar-circle">
+              <img
+                class="avatar-photo"
+                src="me.jpg"
+                alt="Maria Tejaswi"
+                loading="eager"
+                decoding="async"
+              />
+            </div>
+            <div class="avatar-orbit-ring"></div>
+            <div class="avatar-glow"></div>
           </div>
-          <div class="avatar-orbit-ring"></div>
-          <div class="avatar-glow"></div>
+
+          <!-- Greeting + Name -->
+          <p class="hero-greeting">Hello, I'm</p>
+          <h1 class="hero-name">
+            Imandi <span class="gradient-text">Maria</span><br />Tejaswi
+          </h1>
+
+          <!-- Typewriter Role (JS updates #typewriter-text) -->
+          <div class="hero-role">
+            <span class="gradient-text" id="typewriter-text"></span>
+            <span class="typewriter-cursor">|</span>
+          </div>
+
+          <!-- Tagline -->
+          <p class="hero-tagline">
+            Full stack developer passionate about building scalable<br />and
+            user-friendly web applications.
+          </p>
+
+          <!-- Call-to-action Buttons -->
+          <div class="hero-buttons">
+            <button
+              class="btn btn--primary"
+              onclick="smoothScrollTo('projects')"
+            >
+              View Projects
+            </button>
+            <button
+              class="btn btn--outline"
+              onclick="smoothScrollTo('contact')"
+            >
+              ✉ Contact Me
+            </button>
+            <a
+              class="btn btn--outline"
+              href="https://drive.google.com/uc?export=download&id=1W84buv1j4_QrpZnN_Lni4c_gk8qexblE"
+              target="_blank"
+              rel="noreferrer"
+              >⬇ Resume</a
+            >
+          </div>
+
+          <!-- Social Links -->
+          <div class="hero-socials">
+            <a
+              class="social-icon-btn"
+              href="https://github.com/MariaTejaswi/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="GitHub"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58 0-.29-.01-1.04-.02-2.05-3.34.73-4.04-1.61-4.04-1.61-.55-1.38-1.33-1.75-1.33-1.75-1.09-.74.08-.72.08-.72 1.2.09 1.83 1.23 1.83 1.23 1.07 1.84 2.81 1.31 3.49 1 .11-.77.42-1.31.76-1.61-2.67-.3-5.47-1.34-5.47-5.94 0-1.31.47-2.39 1.23-3.23-.12-.3-.53-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.48 11.48 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.65 1.65.24 2.87.12 3.17.77.84 1.23 1.92 1.23 3.23 0 4.61-2.8 5.64-5.48 5.94.43.37.81 1.09.81 2.21 0 1.6-.01 2.88-.01 3.27 0 .32.21.7.82.58C20.57 21.8 24 17.3 24 12 24 5.37 18.63 0 12 0z"
+                />
+              </svg>
+            </a>
+            <a
+              class="social-icon-btn"
+              href="https://linkedin.com/in/maria-tejaswi/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="LinkedIn"
+              >in</a
+            >
+            <a
+              class="social-icon-btn"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=mariatejaswiimandi@gmail.com&su=Portfolio%20Inquiry&body=Hi%20Maria%2C%0A%0AI%20visited%20your%20portfolio%20and%20would%20like%20to%20connect%20regarding%20"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Email"
+              >@</a
+            >
+          </div>
         </div>
 
-        <!-- Greeting + Name -->
-        <p class="hero-greeting">Hello, I'm</p>
-        <h1 class="hero-name">
-          Imandi <span class="gradient-text">Maria</span><br />Tejaswi
-        </h1>
+        <!-- Scroll-down cue -->
+        <button
+          class="scroll-cue"
+          onclick="smoothScrollTo('about')"
+          aria-label="Scroll down"
+        >
+          ↓
+        </button>
+      </section>
 
-        <!-- Typewriter Role (JS updates #typewriter-text) -->
-        <div class="hero-role">
-          <span class="gradient-text" id="typewriter-text"></span>
-          <span class="typewriter-cursor">|</span>
-        </div>
+      <div class="section-divider"></div>
 
-        <!-- Tagline -->
-        <p class="hero-tagline">
-          Full stack developer passionate about building scalable<br />and user-friendly web applications.
-        </p>
-
-        <!-- Call-to-action Buttons -->
-        <div class="hero-buttons">
-          <button class="btn btn--primary" onclick="smoothScrollTo('projects')">View Projects</button>
-          <button class="btn btn--outline" onclick="smoothScrollTo('contact')">✉ Contact Me</button>
-          <a class="btn btn--outline" href="https://drive.google.com/uc?export=download&id=1W84buv1j4_QrpZnN_Lni4c_gk8qexblE" target="_blank" rel="noreferrer">⬇ Resume</a>
-        </div>
-
-        <!-- Social Links -->
-        <div class="hero-socials">
-          <a class="social-icon-btn" href="https://github.com/MariaTejaswi/"      target="_blank" rel="noreferrer" aria-label="GitHub">
-            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58 0-.29-.01-1.04-.02-2.05-3.34.73-4.04-1.61-4.04-1.61-.55-1.38-1.33-1.75-1.33-1.75-1.09-.74.08-.72.08-.72 1.2.09 1.83 1.23 1.83 1.23 1.07 1.84 2.81 1.31 3.49 1 .11-.77.42-1.31.76-1.61-2.67-.3-5.47-1.34-5.47-5.94 0-1.31.47-2.39 1.23-3.23-.12-.3-.53-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.48 11.48 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.65 1.65.24 2.87.12 3.17.77.84 1.23 1.92 1.23 3.23 0 4.61-2.8 5.64-5.48 5.94.43.37.81 1.09.81 2.21 0 1.6-.01 2.88-.01 3.27 0 .32.21.7.82.58C20.57 21.8 24 17.3 24 12 24 5.37 18.63 0 12 0z"/>
-            </svg>
-          </a>
-          <a class="social-icon-btn" href="https://linkedin.com/in/maria-tejaswi/" target="_blank" rel="noreferrer" aria-label="LinkedIn">in</a>
-          <a class="social-icon-btn" href="https://mail.google.com/mail/?view=cm&fs=1&to=mariatejaswiimandi@gmail.com&su=Portfolio%20Inquiry&body=Hi%20Maria%2C%0A%0AI%20visited%20your%20portfolio%20and%20would%20like%20to%20connect%20regarding%20" target="_blank" rel="noreferrer" aria-label="Email">@</a>
-        </div>
-      </div>
-
-      <!-- Scroll-down cue -->
-      <button class="scroll-cue" onclick="smoothScrollTo('about')" aria-label="Scroll down">↓</button>
-    </section>
-
-    <div class="section-divider"></div>
-
-    <!-- ========================================================
+      <!-- ========================================================
          SECTION 2: ABOUT
          Bio cards on the left, Education timeline on the right
          ======================================================== -->
-    <section id="about">
-      <div class="container">
+      <section id="about">
+        <div class="container">
+          <!-- Section Header -->
+          <div class="section-header animate-fade-up">
+            <p class="section-label">Who I Am</p>
+            <h2 class="section-title">
+              About <span class="gradient-text">Me</span>
+            </h2>
+            <div class="section-underline"></div>
+          </div>
 
-        <!-- Section Header -->
-        <div class="section-header animate-fade-up">
-          <p class="section-label">Who I Am</p>
-          <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
-          <div class="section-underline"></div>
-        </div>
-
-        <div class="about-grid">
-
-          <!-- LEFT: Bio + Quick Stats -->
-          <div class="about-left animate-slide-left">
-
-            <div class="bio-card">
-              <div class="bio-card__icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-laptop-icon lucide-laptop" aria-hidden="true" focusable="false"><path d="M18 5a2 2 0 0 1 2 2v8.526a2 2 0 0 0 .212.897l1.068 2.127a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45l1.068-2.127A2 2 0 0 0 4 15.526V7a2 2 0 0 1 2-2z"/><path d="M20.054 15.987H3.946"/></svg>
+          <div class="about-grid">
+            <!-- LEFT: Bio + Quick Stats -->
+            <div class="about-left animate-slide-left">
+              <div class="bio-card">
+                <div class="bio-card__icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-laptop-icon lucide-laptop"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <path
+                      d="M18 5a2 2 0 0 1 2 2v8.526a2 2 0 0 0 .212.897l1.068 2.127a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45l1.068-2.127A2 2 0 0 0 4 15.526V7a2 2 0 0 1 2-2z"
+                    />
+                    <path d="M20.054 15.987H3.946" />
+                  </svg>
+                </div>
+                <h3 class="bio-card__title">Professional Summary</h3>
+                <p class="bio-card__text">
+                  I'm a passionate Full Stack Developer and B.Tech Computer
+                  Science student at Lovely Professional University. I
+                  specialize in building end-to-end web applications using the
+                  MERN stack, with a strong foundation in RESTful APIs, database
+                  management, and modern frontend development.
+                </p>
               </div>
-              <h3 class="bio-card__title">Professional Summary</h3>
-              <p class="bio-card__text">
-                I'm a passionate Full Stack Developer and B.Tech Computer Science student at Lovely
-                Professional University. I specialize in building end-to-end web applications using
-                the MERN stack, with a strong foundation in RESTful APIs, database management,
-                and modern frontend development.
-              </p>
+
+              <div class="bio-card">
+                <div class="bio-card__icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-lightbulb-icon lucide-lightbulb"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <path
+                      d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"
+                    />
+                    <path d="M9 18h6" />
+                    <path d="M10 22h4" />
+                  </svg>
+                </div>
+                <h3 class="bio-card__title">What Drives Me</h3>
+                <p class="bio-card__text">
+                  I thrive on solving complex problems and transforming ideas
+                  into functional, scalable systems. From building property
+                  management platforms to e-commerce stores, I bring both
+                  technical rigor and creative thinking to every project.
+                </p>
+              </div>
+
+              <!-- Quick stats row -->
+              <div class="stats-row">
+                <div class="stat-box">
+                  <div class="stat-value">2+</div>
+                  <div class="stat-label">Projects Built</div>
+                </div>
+                <div class="stat-box">
+                  <div class="stat-value">100+</div>
+                  <div class="stat-label">LeetCode Solved</div>
+                </div>
+                <div class="stat-box">
+                  <div class="stat-value">7.95</div>
+                  <div class="stat-label">CGPA</div>
+                </div>
+              </div>
             </div>
 
-            <div class="bio-card">
-              <div class="bio-card__icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lightbulb-icon lucide-lightbulb" aria-hidden="true" focusable="false"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
-              </div>
-              <h3 class="bio-card__title">What Drives Me</h3>
-              <p class="bio-card__text">
-                I thrive on solving complex problems and transforming ideas into functional, scalable
-                systems. From building property management platforms to e-commerce stores, I bring
-                both technical rigor and creative thinking to every project.
-              </p>
-            </div>
+            <!-- RIGHT: Education Timeline -->
+            <div class="about-right animate-slide-right">
+              <h3 class="timeline-heading">🎓 Education</h3>
 
-            <!-- Quick stats row -->
-            <div class="stats-row">
-              <div class="stat-box">
-                <div class="stat-value">2+</div>
-                <div class="stat-label">Projects Built</div>
-              </div>
-              <div class="stat-box">
-                <div class="stat-value">100+</div>
-                <div class="stat-label">LeetCode Solved</div>
-              </div>
-              <div class="stat-box">
-                <div class="stat-value">7.95</div>
-                <div class="stat-label">CGPA</div>
+              <div class="timeline">
+                <!-- Animated vertical line -->
+                <div class="timeline-line" id="timeline-line"></div>
+
+                <!-- Education Entry 1 -->
+                <div class="timeline-item animate-fade-up stagger-1">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-card">
+                    <div class="timeline-card__header">
+                      <strong>Lovely Professional University</strong>
+                      <span class="timeline-card__period"
+                        >Aug '23 – Present</span
+                      >
+                    </div>
+                    <p class="timeline-card__degree">
+                      B.Tech – Computer Science & Engineering
+                    </p>
+                    <p class="timeline-card__location">Phagwara, Punjab</p>
+                    <span class="badge">CGPA: 7.95</span>
+                  </div>
+                </div>
+
+                <!-- Education Entry 2 -->
+                <div class="timeline-item animate-fade-up stagger-2">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-card">
+                    <div class="timeline-card__header">
+                      <strong>Sri Viswa Junior College</strong>
+                      <span class="timeline-card__period"
+                        >Mar '21 – May '23</span
+                      >
+                    </div>
+                    <p class="timeline-card__degree">Intermediate – MPC</p>
+                    <p class="timeline-card__location">
+                      Visakhapatnam, Andhra Pradesh
+                    </p>
+                    <span class="badge">90%</span>
+                  </div>
+                </div>
+
+                <!-- Education Entry 3 -->
+                <div class="timeline-item animate-fade-up stagger-3">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-card">
+                    <div class="timeline-card__header">
+                      <strong>Narayana High School</strong>
+                      <span class="timeline-card__period"
+                        >Apr '20 – Apr '21</span
+                      >
+                    </div>
+                    <p class="timeline-card__degree">
+                      Matriculation – 10th Grade
+                    </p>
+                    <p class="timeline-card__location">
+                      Visakhapatnam, Andhra Pradesh
+                    </p>
+                    <span class="badge">74%</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-
-          <!-- RIGHT: Education Timeline -->
-          <div class="about-right animate-slide-right">
-            <h3 class="timeline-heading">🎓 Education</h3>
-
-            <div class="timeline">
-              <!-- Animated vertical line -->
-              <div class="timeline-line" id="timeline-line"></div>
-
-              <!-- Education Entry 1 -->
-              <div class="timeline-item animate-fade-up stagger-1">
-                <div class="timeline-dot"></div>
-                <div class="timeline-card">
-                  <div class="timeline-card__header">
-                    <strong>Lovely Professional University</strong>
-                    <span class="timeline-card__period">Aug '23 – Present</span>
-                  </div>
-                  <p class="timeline-card__degree">B.Tech – Computer Science & Engineering</p>
-                  <p class="timeline-card__location">Phagwara, Punjab</p>
-                  <span class="badge">CGPA: 7.95</span>
-                </div>
-              </div>
-
-              <!-- Education Entry 2 -->
-              <div class="timeline-item animate-fade-up stagger-2">
-                <div class="timeline-dot"></div>
-                <div class="timeline-card">
-                  <div class="timeline-card__header">
-                    <strong>Sri Viswa Junior College</strong>
-                    <span class="timeline-card__period">Mar '21 – May '23</span>
-                  </div>
-                  <p class="timeline-card__degree">Intermediate – MPC</p>
-                  <p class="timeline-card__location">Visakhapatnam, Andhra Pradesh</p>
-                  <span class="badge">90%</span>
-                </div>
-              </div>
-
-              <!-- Education Entry 3 -->
-              <div class="timeline-item animate-fade-up stagger-3">
-                <div class="timeline-dot"></div>
-                <div class="timeline-card">
-                  <div class="timeline-card__header">
-                    <strong>Narayana High School</strong>
-                    <span class="timeline-card__period">Apr '20 – Apr '21</span>
-                  </div>
-                  <p class="timeline-card__degree">Matriculation – 10th Grade</p>
-                  <p class="timeline-card__location">Visakhapatnam, Andhra Pradesh</p>
-                  <span class="badge">74%</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
         </div>
-      </div>
-    </section>
+      </section>
 
-    <div class="section-divider"></div>
+      <div class="section-divider"></div>
 
-    <!-- ========================================================
+      <!-- ========================================================
          SECTION 3: SKILLS
          6 skill category cards with staggered entrance animation
          ======================================================== -->
-    <section id="skills">
-      <div class="container">
+      <section id="skills">
+        <div class="container">
+          <div class="section-header animate-fade-up">
+            <p class="section-label">What I Know</p>
+            <h2 class="section-title">
+              Technical <span class="gradient-text">Skills</span>
+            </h2>
+            <div class="section-underline"></div>
+          </div>
 
-        <div class="section-header animate-fade-up">
-          <p class="section-label">What I Know</p>
-          <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
-          <div class="section-underline"></div>
+          <div class="skills-grid">
+            <div class="skill-card animate-fade-up stagger-1">
+              <div class="skill-card__icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-keyboard-icon lucide-keyboard"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path d="M10 8h.01" />
+                  <path d="M12 12h.01" />
+                  <path d="M14 8h.01" />
+                  <path d="M16 12h.01" />
+                  <path d="M18 8h.01" />
+                  <path d="M6 8h.01" />
+                  <path d="M7 16h10" />
+                  <path d="M8 12h.01" />
+                  <rect width="20" height="16" x="2" y="4" rx="2" />
+                </svg>
+              </div>
+              <h3 class="skill-card__title">Languages</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">Python</span>
+              </div>
+            </div>
+
+            <div class="skill-card animate-fade-up stagger-2">
+              <div class="skill-card__icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-laptop-icon lucide-laptop"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path
+                    d="M18 5a2 2 0 0 1 2 2v8.526a2 2 0 0 0 .212.897l1.068 2.127a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45l1.068-2.127A2 2 0 0 0 4 15.526V7a2 2 0 0 1 2-2z"
+                  />
+                  <path d="M20.054 15.987H3.946" />
+                </svg>
+              </div>
+              <h3 class="skill-card__title">Frontend</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">React.js</span>
+                <span class="skill-tag">HTML5</span>
+                <span class="skill-tag">CSS3</span>
+                <span class="skill-tag">Tailwind CSS</span>
+              </div>
+            </div>
+
+            <div class="skill-card animate-fade-up stagger-3">
+              <div class="skill-card__icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-settings-icon lucide-settings"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path
+                    d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"
+                  />
+                  <circle cx="12" cy="12" r="3" />
+                </svg>
+              </div>
+              <h3 class="skill-card__title">Backend</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">Express.js</span>
+                <span class="skill-tag">RESTful APIs</span>
+                <span class="skill-tag">PHP</span>
+              </div>
+            </div>
+
+            <div class="skill-card animate-fade-up stagger-4">
+              <div class="skill-card__icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-database-icon lucide-database"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <ellipse cx="12" cy="5" rx="9" ry="3" />
+                  <path d="M3 5V19A9 3 0 0 0 21 19V5" />
+                  <path d="M3 12A9 3 0 0 0 21 12" />
+                </svg>
+              </div>
+              <h3 class="skill-card__title">Database</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">MongoDB</span>
+                <span class="skill-tag">MySQL</span>
+                <span class="skill-tag">PostgreSQL</span>
+                <span class="skill-tag">SQL</span>
+              </div>
+            </div>
+
+            <div class="skill-card animate-fade-up stagger-5">
+              <div class="skill-card__icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-brain-icon lucide-brain"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path d="M12 18V5" />
+                  <path d="M15 13a4.17 4.17 0 0 1-3-4 4.17 4.17 0 0 1-3 4" />
+                  <path d="M17.598 6.5A3 3 0 1 0 12 5a3 3 0 1 0-5.598 1.5" />
+                  <path d="M17.997 5.125a4 4 0 0 1 2.526 5.77" />
+                  <path d="M18 18a4 4 0 0 0 2-7.464" />
+                  <path
+                    d="M19.967 17.483A4 4 0 1 1 12 18a4 4 0 1 1-7.967-.517"
+                  />
+                  <path d="M6 18a4 4 0 0 1-2-7.464" />
+                  <path d="M6.003 5.125a4 4 0 0 0-2.526 5.77" />
+                </svg>
+              </div>
+              <h3 class="skill-card__title">CS Fundamentals</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">DSA</span>
+                <span class="skill-tag">OOPS</span>
+                <span class="skill-tag">DBMS</span>
+                <span class="skill-tag">OS</span>
+                <span class="skill-tag">CN</span>
+              </div>
+            </div>
+
+            <div class="skill-card animate-fade-up stagger-6">
+              <div class="skill-card__icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-hammer-icon lucide-hammer"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path d="m15 12-9.373 9.373a1 1 0 0 1-3.001-3L12 9" />
+                  <path d="m18 15 4-4" />
+                  <path
+                    d="m21.5 11.5-1.914-1.914A2 2 0 0 1 19 8.172v-.344a2 2 0 0 0-.586-1.414l-1.657-1.657A6 6 0 0 0 12.516 3H9l1.243 1.243A6 6 0 0 1 12 8.485V10l2 2h1.172a2 2 0 0 1 1.414.586L18.5 14.5"
+                  />
+                </svg>
+              </div>
+              <h3 class="skill-card__title">Tools & Platforms</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">VS Code</span>
+                <span class="skill-tag">GitHub</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">Jupyter Notebook</span>
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
 
-        <div class="skills-grid">
+      <div class="section-divider"></div>
 
-          <div class="skill-card animate-fade-up stagger-1">
-            <div class="skill-card__icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-keyboard-icon lucide-keyboard" aria-hidden="true" focusable="false"><path d="M10 8h.01"/><path d="M12 12h.01"/><path d="M14 8h.01"/><path d="M16 12h.01"/><path d="M18 8h.01"/><path d="M6 8h.01"/><path d="M7 16h10"/><path d="M8 12h.01"/><rect width="20" height="16" x="2" y="4" rx="2"/></svg>
-            </div>
-            <h3 class="skill-card__title">Languages</h3>
-            <div class="skill-tags">
-              <span class="skill-tag">Java</span>
-              <span class="skill-tag">JavaScript</span>
-              <span class="skill-tag">Python</span>
-            </div>
-          </div>
-
-          <div class="skill-card animate-fade-up stagger-2">
-            <div class="skill-card__icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-laptop-icon lucide-laptop" aria-hidden="true" focusable="false"><path d="M18 5a2 2 0 0 1 2 2v8.526a2 2 0 0 0 .212.897l1.068 2.127a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45l1.068-2.127A2 2 0 0 0 4 15.526V7a2 2 0 0 1 2-2z"/><path d="M20.054 15.987H3.946"/></svg>
-            </div>
-            <h3 class="skill-card__title">Frontend</h3>
-            <div class="skill-tags">
-              <span class="skill-tag">React.js</span>
-              <span class="skill-tag">HTML5</span>
-              <span class="skill-tag">CSS3</span>
-              <span class="skill-tag">Tailwind CSS</span>
-            </div>
-          </div>
-
-          <div class="skill-card animate-fade-up stagger-3">
-            <div class="skill-card__icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-settings-icon lucide-settings" aria-hidden="true" focusable="false"><path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"/><circle cx="12" cy="12" r="3"/></svg>
-            </div>
-            <h3 class="skill-card__title">Backend</h3>
-            <div class="skill-tags">
-              <span class="skill-tag">Node.js</span>
-              <span class="skill-tag">Express.js</span>
-              <span class="skill-tag">RESTful APIs</span>
-              <span class="skill-tag">PHP</span>
-            </div>
-          </div>
-
-          <div class="skill-card animate-fade-up stagger-4">
-            <div class="skill-card__icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-database-icon lucide-database" aria-hidden="true" focusable="false"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/></svg>
-            </div>
-            <h3 class="skill-card__title">Database</h3>
-            <div class="skill-tags">
-              <span class="skill-tag">MongoDB</span>
-              <span class="skill-tag">MySQL</span>
-              <span class="skill-tag">PostgreSQL</span>
-              <span class="skill-tag">SQL</span>
-            </div>
-          </div>
-
-          <div class="skill-card animate-fade-up stagger-5">
-            <div class="skill-card__icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-brain-icon lucide-brain" aria-hidden="true" focusable="false"><path d="M12 18V5"/><path d="M15 13a4.17 4.17 0 0 1-3-4 4.17 4.17 0 0 1-3 4"/><path d="M17.598 6.5A3 3 0 1 0 12 5a3 3 0 1 0-5.598 1.5"/><path d="M17.997 5.125a4 4 0 0 1 2.526 5.77"/><path d="M18 18a4 4 0 0 0 2-7.464"/><path d="M19.967 17.483A4 4 0 1 1 12 18a4 4 0 1 1-7.967-.517"/><path d="M6 18a4 4 0 0 1-2-7.464"/><path d="M6.003 5.125a4 4 0 0 0-2.526 5.77"/></svg>
-            </div>
-            <h3 class="skill-card__title">CS Fundamentals</h3>
-            <div class="skill-tags">
-              <span class="skill-tag">DSA</span>
-              <span class="skill-tag">OOPS</span>
-              <span class="skill-tag">DBMS</span>
-              <span class="skill-tag">OS</span>
-              <span class="skill-tag">CN</span>
-            </div>
-          </div>
-
-          <div class="skill-card animate-fade-up stagger-6">
-            <div class="skill-card__icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-hammer-icon lucide-hammer" aria-hidden="true" focusable="false"><path d="m15 12-9.373 9.373a1 1 0 0 1-3.001-3L12 9"/><path d="m18 15 4-4"/><path d="m21.5 11.5-1.914-1.914A2 2 0 0 1 19 8.172v-.344a2 2 0 0 0-.586-1.414l-1.657-1.657A6 6 0 0 0 12.516 3H9l1.243 1.243A6 6 0 0 1 12 8.485V10l2 2h1.172a2 2 0 0 1 1.414.586L18.5 14.5"/></svg>
-            </div>
-            <h3 class="skill-card__title">Tools & Platforms</h3>
-            <div class="skill-tags">
-              <span class="skill-tag">VS Code</span>
-              <span class="skill-tag">GitHub</span>
-              <span class="skill-tag">Git</span>
-              <span class="skill-tag">Jupyter Notebook</span>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <div class="section-divider"></div>
-
-        <!-- ========================================================
+      <!-- ========================================================
           SECTION 4: PROJECTS
           Project cards with always-visible source/live buttons
           ======================================================== -->
-    <section id="projects">
-      <div class="container">
+      <section id="projects">
+        <div class="container">
+          <div class="section-header animate-fade-up">
+            <p class="section-label">What I've Built</p>
+            <h2 class="section-title">
+              <span class="gradient-text">Projects</span>
+            </h2>
+            <div class="section-underline"></div>
+          </div>
 
-        <div class="section-header animate-fade-up">
-          <p class="section-label">What I've Built</p>
-          <h2 class="section-title"><span class="gradient-text">Projects</span></h2>
-          <div class="section-underline"></div>
-        </div>
+          <div class="projects-showcase animate-fade-up">
+            <div class="projects-showcase-grid">
+              <article class="project-card project-card--mini">
+                <div class="project-body">
+                  <div class="project-thumb">
+                    <img
+                      src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&q=80"
+                      alt="Property Hub project preview"
+                      loading="lazy"
+                    />
+                  </div>
+                  <h4 class="project-title">Property Hub</h4>
+                  <div class="project-mini-details">
+                    <p class="project-desc">
+                      Architected a MERN-based web application to help landlords
+                      manage property listings, tenant information, and rent
+                      records through one centralized digital system;
+                      implemented RESTful APIs with Node.js and Express and
+                      designed MongoDB collections for efficient CRUD operations
+                      and reliable data management; collaborated on React
+                      frontend-backend integration to ensure seamless data flow,
+                      responsive UX, and accurate real-time updates across the
+                      platform.
+                    </p>
+                  </div>
+                  <div class="tech-tags">
+                    <span class="tech-tag">MongoDB</span>
+                    <span class="tech-tag">Express.js</span>
+                    <span class="tech-tag">React.js</span>
+                    <span class="tech-tag">Node.js</span>
+                  </div>
+                  <div class="project-actions">
+                    <a
+                      class="project-overlay__btn project-overlay__btn--gh"
+                      href="https://github.com/MariaTejaswi/PROPERTY-HUB"
+                      target="_blank"
+                      rel="noreferrer"
+                      >View Source Code
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right"
+                        aria-hidden="true"
+                        focusable="false"
+                      >
+                        <path d="M7 7h10v10" />
+                        <path d="M7 17 17 7" /></svg
+                    ></a>
+                    <a
+                      class="project-overlay__btn project-overlay__btn--live"
+                      href="https://the-property-hub.netlify.app/"
+                      target="_blank"
+                      rel="noreferrer"
+                      >View Demo Live
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right"
+                        aria-hidden="true"
+                        focusable="false"
+                      >
+                        <path d="M7 7h10v10" />
+                        <path d="M7 17 17 7" /></svg
+                    ></a>
+                  </div>
+                </div>
+              </article>
 
-        <div class="projects-showcase animate-fade-up">
-          <div class="projects-showcase-grid">
-            <article class="project-card project-card--mini">
-              <div class="project-body">
-                <div class="project-thumb">
-                  <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&q=80" alt="Property Hub project preview" loading="lazy" />
+              <article class="project-card project-card--mini">
+                <div class="project-body">
+                  <div class="project-thumb">
+                    <img
+                      src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1200&q=80"
+                      alt="Fashion Store project preview"
+                      loading="lazy"
+                    />
+                  </div>
+                  <h4 class="project-title">Fashion Store Website</h4>
+                  <p class="project-desc">
+                    Developed essential e-commerce features including
+                    authentication, product browsing, dynamic search, cart
+                    management, and secure checkout, which enhanced user
+                    experience and improved overall navigation flow; crafted a
+                    responsive and visually appealing interface using Tailwind
+                    CSS to ensure consistent usability across mobile and desktop
+                    devices; engineered backend logic using PHP and MySQL to
+                    manage products, customer profiles, and order processing.
+                  </p>
+                  <div class="tech-tags">
+                    <span class="tech-tag">PHP</span>
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">Tailwind CSS</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">MySQL</span>
+                  </div>
+                  <div class="project-actions">
+                    <a
+                      class="project-overlay__btn project-overlay__btn--gh"
+                      href="https://github.com/MariaTejaswi/FASHION_STORE"
+                      target="_blank"
+                      rel="noreferrer"
+                      >View Source Code
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right"
+                        aria-hidden="true"
+                        focusable="false"
+                      >
+                        <path d="M7 7h10v10" />
+                        <path d="M7 17 17 7" /></svg
+                    ></a>
+                    <a
+                      class="project-overlay__btn project-overlay__btn--live"
+                      href="#"
+                      target="_blank"
+                      rel="noreferrer"
+                      >View Demo Live
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right"
+                        aria-hidden="true"
+                        focusable="false"
+                      >
+                        <path d="M7 7h10v10" />
+                        <path d="M7 17 17 7" /></svg
+                    ></a>
+                  </div>
                 </div>
-                <h4 class="project-title">Property Hub</h4>
-                <div class="project-mini-details">
-                  <p class="project-desc">Architected a MERN-based web application to help landlords manage property listings, tenant information, and rent records through one centralized digital system; implemented RESTful APIs with Node.js and Express and designed MongoDB collections for efficient CRUD operations and reliable data management; collaborated on React frontend-backend integration to ensure seamless data flow, responsive UX, and accurate real-time updates across the platform.</p>
+              </article>
+
+              <article class="project-card project-card--mini">
+                <div class="project-body">
+                  <div class="project-thumb">
+                    <img
+                      src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80"
+                      alt="Predictive Maintenance System project preview"
+                      loading="lazy"
+                    />
+                  </div>
+                  <h4 class="project-title">Predictive Maintenance System</h4>
+                  <p class="project-desc">
+                    Pre-processed the dataset using scikit-learn by handling
+                    missing values and normalising features, which improved
+                    model performance by 25% and reduced prediction error by
+                    20%; performed feature engineering and trained advanced ML
+                    models, achieving 99.98% accuracy with XGBoost; deployed the
+                    trained model using Streamlit to deliver an intuitive
+                    interface for real-time predictions.
+                  </p>
+                  <div class="tech-tags">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Machine Learning</span>
+                    <span class="tech-tag">XGBoost</span>
+                    <span class="tech-tag">Streamlit</span>
+                  </div>
+                  <div class="project-actions">
+                    <a
+                      class="project-overlay__btn project-overlay__btn--gh"
+                      href="https://github.com/yaswanthreddyyvs/System_Failure_Prediction"
+                      target="_blank"
+                      rel="noreferrer"
+                      >View Source Code
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right"
+                        aria-hidden="true"
+                        focusable="false"
+                      >
+                        <path d="M7 7h10v10" />
+                        <path d="M7 17 17 7" /></svg
+                    ></a>
+                    <a
+                      class="project-overlay__btn project-overlay__btn--live"
+                      href="https://systemfailureprediction-mtzhkew4xda9o6pqsrot9f.streamlit.app/"
+                      target="_blank"
+                      rel="noreferrer"
+                      >View Demo Live
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right"
+                        aria-hidden="true"
+                        focusable="false"
+                      >
+                        <path d="M7 7h10v10" />
+                        <path d="M7 17 17 7" /></svg
+                    ></a>
+                  </div>
                 </div>
-                <div class="tech-tags">
-                  <span class="tech-tag">MongoDB</span>
-                  <span class="tech-tag">Express.js</span>
-                  <span class="tech-tag">React.js</span>
-                  <span class="tech-tag">Node.js</span>
-                </div>
-                <div class="project-actions">
-                  <a class="project-overlay__btn project-overlay__btn--gh" href="https://github.com/MariaTejaswi/PROPERTY-HUB" target="_blank" rel="noreferrer">View Source Code <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right" aria-hidden="true" focusable="false"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
-                  <a class="project-overlay__btn project-overlay__btn--live" href="https://the-property-hub.netlify.app/" target="_blank" rel="noreferrer">View Demo Live <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right" aria-hidden="true" focusable="false"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
-                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="section-header animate-fade-up">
+            <p class="section-label">Deep Dive</p>
+            <h2 class="section-title">
+              <span class="gradient-text">Featured Case Studies</span>
+            </h2>
+            <div class="section-underline"></div>
+          </div>
+
+          <div class="projects-grid">
+            <article
+              class="project-card project-card--case animate-fade-up stagger-1"
+            >
+              <div class="project-banner project-banner--purple">
+                <img
+                  class="project-banner__image"
+                  src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&q=80"
+                  alt="Property Hub featured case study preview"
+                  loading="lazy"
+                />
+                <div class="project-banner__grid"></div>
+                <div class="project-banner__period">Jun '25 - Jul '25</div>
               </div>
-            </article>
 
-            <article class="project-card project-card--mini">
-              <div class="project-body">
-                <div class="project-thumb">
-                  <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1200&q=80" alt="Fashion Store project preview" loading="lazy" />
+              <div class="project-body project-body--case">
+                <h3 class="project-title">
+                  The Property Hub - Detailed Case Study
+                </h3>
+                <p class="project-desc">
+                  A property listing platform focused on helping users explore
+                  and manage properties through a structured and user-friendly
+                  digital experience.
+                </p>
+
+                <div class="project-case-study project-case-study--detailed">
+                  <div class="case-row">
+                    <p class="case-label">Problem</p>
+                    <p class="case-text">
+                      The real estate process often lacks a centralized digital
+                      platform where users can easily browse and manage property
+                      listings. Property information is usually scattered across
+                      different sources, making it difficult for users to access
+                      accurate details in one place. Additionally, property
+                      owners face challenges in efficiently managing multiple
+                      listings and updating information.
+                    </p>
+                  </div>
+                  <div class="case-row">
+                    <p class="case-label">Stack</p>
+                    <p class="case-text">
+                      The application was developed using HTML, CSS, and
+                      JavaScript for the frontend to create a responsive and
+                      interactive user interface. Version control and project
+                      management were handled using Git and GitHub, and the
+                      development environment was set up using Visual Studio
+                      Code. Backend technologies can be integrated if required.
+                    </p>
+                  </div>
+                  <div class="case-row">
+                    <p class="case-label">Architecture</p>
+                    <p class="case-text">
+                      The system follows a simple web application architecture
+                      where the frontend handles user interface and
+                      interactions. Users can browse available property listings
+                      and view detailed information about each property. Admin
+                      functionality supports adding, updating, and deleting
+                      listings. If a backend is integrated, it manages data flow
+                      and business logic for smooth communication between UI and
+                      stored data.
+                    </p>
+                  </div>
+                  <div class="case-row">
+                    <p class="case-label">Challenges</p>
+                    <ul class="project-features">
+                      <li>
+                        Designing a clean and fully responsive interface across
+                        devices
+                      </li>
+                      <li>
+                        Organizing and presenting property data in a
+                        user-friendly structure
+                      </li>
+                      <li>
+                        Handling dynamic content updates while maintaining
+                        performance
+                      </li>
+                      <li>
+                        Ensuring smooth and intuitive navigation for users
+                      </li>
+                      <li>
+                        Structuring the project for future scalability and
+                        additions
+                      </li>
+                      <li>
+                        Maintaining consistency in design and layout throughout
+                        the app
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="case-row">
+                    <p class="case-label">Results</p>
+                    <p class="case-text">
+                      The project resulted in a functional property listing
+                      platform that allows users to easily explore and manage
+                      properties. It strengthened my understanding of frontend
+                      development, user interface design, and real-world project
+                      structuring. Overall, this project demonstrates my ability
+                      to build practical web applications and solve real-world
+                      problems effectively.
+                    </p>
+                  </div>
                 </div>
-                <h4 class="project-title">Fashion Store Website</h4>
-                <p class="project-desc">Developed essential e-commerce features including authentication, product browsing, dynamic search, cart management, and secure checkout, which enhanced user experience and improved overall navigation flow; crafted a responsive and visually appealing interface using Tailwind CSS to ensure consistent usability across mobile and desktop devices; engineered backend logic using PHP and MySQL to manage products, customer profiles, and order processing.</p>
+
+                <div class="project-actions">
+                  <a
+                    class="project-overlay__btn project-overlay__btn--gh"
+                    href="https://github.com/MariaTejaswi/PROPERTY-HUB"
+                    target="_blank"
+                    rel="noreferrer"
+                    >View Source Code
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path d="M7 7h10v10" />
+                      <path d="M7 17 17 7" /></svg
+                  ></a>
+                  <a
+                    class="project-overlay__btn project-overlay__btn--live"
+                    href="https://the-property-hub.netlify.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                    >View Demo Live
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path d="M7 7h10v10" />
+                      <path d="M7 17 17 7" /></svg
+                  ></a>
+                </div>
+
                 <div class="tech-tags">
-                  <span class="tech-tag">PHP</span>
                   <span class="tech-tag">HTML</span>
-                  <span class="tech-tag">Tailwind CSS</span>
+                  <span class="tech-tag">CSS</span>
                   <span class="tech-tag">JavaScript</span>
-                  <span class="tech-tag">MySQL</span>
-                </div>
-                <div class="project-actions">
-                  <a class="project-overlay__btn project-overlay__btn--gh" href="https://github.com/MariaTejaswi/FASHION_STORE" target="_blank" rel="noreferrer">View Source Code <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right" aria-hidden="true" focusable="false"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
-                  <a class="project-overlay__btn project-overlay__btn--live" href="#" target="_blank" rel="noreferrer">View Demo Live <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right" aria-hidden="true" focusable="false"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
-                </div>
-              </div>
-            </article>
-
-            <article class="project-card project-card--mini">
-              <div class="project-body">
-                <div class="project-thumb">
-                  <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80" alt="Predictive Maintenance System project preview" loading="lazy" />
-                </div>
-                <h4 class="project-title">Predictive Maintenance System</h4>
-                <p class="project-desc">Pre-processed the dataset using scikit-learn by handling missing values and normalising features, which improved model performance by 25% and reduced prediction error by 20%; performed feature engineering and trained advanced ML models, achieving 99.98% accuracy with XGBoost; deployed the trained model using Streamlit to deliver an intuitive interface for real-time predictions.</p>
-                <div class="tech-tags">
-                  <span class="tech-tag">Python</span>
-                  <span class="tech-tag">Machine Learning</span>
-                  <span class="tech-tag">XGBoost</span>
-                  <span class="tech-tag">Streamlit</span>
-                </div>
-                <div class="project-actions">
-                  <a class="project-overlay__btn project-overlay__btn--gh" href="https://github.com/yaswanthreddyyvs/System_Failure_Prediction" target="_blank" rel="noreferrer">View Source Code <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right" aria-hidden="true" focusable="false"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
-                  <a class="project-overlay__btn project-overlay__btn--live" href="https://systemfailureprediction-mtzhkew4xda9o6pqsrot9f.streamlit.app/" target="_blank" rel="noreferrer">View Demo Live <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right" aria-hidden="true" focusable="false"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+                  <span class="tech-tag">Git</span>
+                  <span class="tech-tag">GitHub</span>
+                  <span class="tech-tag">VS Code</span>
                 </div>
               </div>
             </article>
           </div>
         </div>
+      </section>
 
-        <div class="section-header animate-fade-up">
-          <p class="section-label">Deep Dive</p>
-          <h2 class="section-title"><span class="gradient-text">Featured Case Studies</span></h2>
-          <div class="section-underline"></div>
-        </div>
+      <div class="section-divider"></div>
 
-        <div class="projects-grid">
-          <article class="project-card project-card--case animate-fade-up stagger-1">
-            <div class="project-banner project-banner--purple">
-              <img class="project-banner__image" src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&q=80" alt="Property Hub featured case study preview" loading="lazy" />
-              <div class="project-banner__grid"></div>
-              <div class="project-banner__period">Jun '25 - Jul '25</div>
-            </div>
-
-            <div class="project-body project-body--case">
-              <h3 class="project-title">The Property Hub - Detailed Case Study</h3>
-              <p class="project-desc">
-                A property listing platform focused on helping users explore and manage
-                properties through a structured and user-friendly digital experience.
-              </p>
-
-              <div class="project-case-study project-case-study--detailed">
-                <div class="case-row">
-                  <p class="case-label">Problem</p>
-                  <p class="case-text">The real estate process often lacks a centralized digital platform where users can easily browse and manage property listings. Property information is usually scattered across different sources, making it difficult for users to access accurate details in one place. Additionally, property owners face challenges in efficiently managing multiple listings and updating information.</p>
-                </div>
-                <div class="case-row">
-                  <p class="case-label">Stack</p>
-                  <p class="case-text">The application was developed using HTML, CSS, and JavaScript for the frontend to create a responsive and interactive user interface. Version control and project management were handled using Git and GitHub, and the development environment was set up using Visual Studio Code. Backend technologies can be integrated if required.</p>
-                </div>
-                <div class="case-row">
-                  <p class="case-label">Architecture</p>
-                  <p class="case-text">The system follows a simple web application architecture where the frontend handles user interface and interactions. Users can browse available property listings and view detailed information about each property. Admin functionality supports adding, updating, and deleting listings. If a backend is integrated, it manages data flow and business logic for smooth communication between UI and stored data.</p>
-                </div>
-                <div class="case-row">
-                  <p class="case-label">Challenges</p>
-                  <ul class="project-features">
-                    <li>Designing a clean and fully responsive interface across devices</li>
-                    <li>Organizing and presenting property data in a user-friendly structure</li>
-                    <li>Handling dynamic content updates while maintaining performance</li>
-                    <li>Ensuring smooth and intuitive navigation for users</li>
-                    <li>Structuring the project for future scalability and additions</li>
-                    <li>Maintaining consistency in design and layout throughout the app</li>
-                  </ul>
-                </div>
-                <div class="case-row">
-                  <p class="case-label">Results</p>
-                  <p class="case-text">The project resulted in a functional property listing platform that allows users to easily explore and manage properties. It strengthened my understanding of frontend development, user interface design, and real-world project structuring. Overall, this project demonstrates my ability to build practical web applications and solve real-world problems effectively.</p>
-                </div>
-              </div>
-
-              <div class="project-actions">
-                <a class="project-overlay__btn project-overlay__btn--gh" href="https://github.com/MariaTejaswi/PROPERTY-HUB" target="_blank" rel="noreferrer">View Source Code <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right" aria-hidden="true" focusable="false"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
-                <a class="project-overlay__btn project-overlay__btn--live" href="https://the-property-hub.netlify.app/" target="_blank" rel="noreferrer">View Demo Live <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right" aria-hidden="true" focusable="false"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
-              </div>
-
-              <div class="tech-tags">
-                <span class="tech-tag">HTML</span>
-                <span class="tech-tag">CSS</span>
-                <span class="tech-tag">JavaScript</span>
-                <span class="tech-tag">Git</span>
-                <span class="tech-tag">GitHub</span>
-                <span class="tech-tag">VS Code</span>
-              </div>
-            </div>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <div class="section-divider"></div>
-
-    <!-- ========================================================
+      <!-- ========================================================
          SECTION 5: EXPERIENCE
          Internship + Training cards side by side
          Plus certifications row below
          ======================================================== -->
-    <section id="experience">
-      <div class="container">
+      <section id="experience">
+        <div class="container">
+          <div class="section-header animate-fade-up">
+            <p class="section-label">My Journey</p>
+            <h2 class="section-title">
+              Training & <span class="gradient-text">Certificates</span>
+            </h2>
+            <div class="section-underline"></div>
+          </div>
 
-        <div class="section-header animate-fade-up">
-          <p class="section-label">My Journey</p>
-          <h2 class="section-title">Training & <span class="gradient-text">Certificates</span></h2>
-          <div class="section-underline"></div>
-        </div>
-
-        <div class="exp-grid">
-
-          <!-- Internship Card -->
-          <div class="exp-card animate-slide-left">
-            <div class="exp-card__header">
-              <div class="exp-card__icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-briefcase-business-icon lucide-briefcase-business" aria-hidden="true" focusable="false"><path d="M12 12h.01"/><path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><path d="M22 13a18.15 18.15 0 0 1-20 0"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg>
+          <div class="exp-grid">
+            <!-- Internship Card -->
+            <div class="exp-card animate-slide-left">
+              <div class="exp-card__header">
+                <div class="exp-card__icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-briefcase-business-icon lucide-briefcase-business"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <path d="M12 12h.01" />
+                    <path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
+                    <path d="M22 13a18.15 18.15 0 0 1-20 0" />
+                    <rect width="20" height="14" x="2" y="6" rx="2" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="exp-card__role">
+                    Full Stack Web Development Intern
+                  </h3>
+                  <p class="exp-card__company">
+                    Bharat Sanchar Nigam Limited (BSNL)
+                  </p>
+                  <div class="exp-card__meta">
+                    <span class="exp-card__period">Aug '25</span>
+                    <span class="certified-badge">✓ Certified</span>
+                  </div>
+                </div>
               </div>
-              <div>
-                <h3 class="exp-card__role">Full Stack Web Development Intern</h3>
-                <p class="exp-card__company">Bharat Sanchar Nigam Limited (BSNL)</p>
-                <div class="exp-card__meta">
-                  <span class="exp-card__period">Aug '25</span>
-                  <span class="certified-badge">✓ Certified</span>
+              <ul class="exp-points">
+                <li>
+                  Executed responsive web modules and backend services for
+                  internal applications
+                </li>
+                <li>
+                  Designed UI components leading to 20% reduction in page load
+                  times
+                </li>
+                <li>
+                  Built RESTful APIs with Node.js and Express.js integrated with
+                  MySQL
+                </li>
+                <li>
+                  Collaborated on full-stack development, Git/GitHub, deployment
+                  & hosting
+                </li>
+              </ul>
+              <div class="tech-tags">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Express.js</span>
+                <span class="tech-tag">MySQL</span>
+              </div>
+              <a
+                class="exp-certificate-link"
+                href="https://drive.google.com/file/d/1iHdFhGXJK6_dJJeKgGjS6FfeuAAKHtKH/view"
+                target="_blank"
+                rel="noreferrer"
+                >View Certificate
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path d="M7 7h10v10" />
+                  <path d="M7 17 17 7" /></svg
+              ></a>
+            </div>
+
+            <!-- Training Card -->
+            <div class="exp-card animate-slide-right">
+              <div class="exp-card__header">
+                <div class="exp-card__icon exp-card__icon--fuchsia">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-brain-circuit-icon lucide-brain-circuit"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <path
+                      d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"
+                    />
+                    <path d="M9 13a4.5 4.5 0 0 0 3-4" />
+                    <path d="M6.003 5.125A3 3 0 0 0 6.401 6.5" />
+                    <path d="M3.477 10.896a4 4 0 0 1 .585-.396" />
+                    <path d="M6 18a4 4 0 0 1-1.967-.516" />
+                    <path d="M12 13h4" />
+                    <path d="M12 18h6a2 2 0 0 1 2 2v1" />
+                    <path d="M12 8h8" />
+                    <path d="M16 8V5a2 2 0 0 1 2-2" />
+                    <circle cx="16" cy="13" r=".5" />
+                    <circle cx="18" cy="3" r=".5" />
+                    <circle cx="20" cy="21" r=".5" />
+                    <circle cx="20" cy="8" r=".5" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="exp-card__role">Machine Learning Training</h3>
+                  <p class="exp-card__company">
+                    Lovely Professional University
+                  </p>
+                  <div class="exp-card__meta">
+                    <span class="exp-card__period">Jul '25</span>
+                    <span class="certified-badge">✓ Certified</span>
+                  </div>
+                </div>
+              </div>
+              <ul class="exp-points">
+                <li>
+                  Core concepts: data preprocessing, model training, and
+                  evaluation
+                </li>
+                <li>
+                  Tested ML models using Python and Scikit-learn on real-world
+                  datasets
+                </li>
+                <li>
+                  Applied supervised learning: Linear Regression, Decision
+                  Trees, KNN
+                </li>
+                <li>
+                  Worked with NumPy & Pandas for data analysis and manipulation
+                </li>
+              </ul>
+              <div class="tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">NumPy</span>
+                <span class="tech-tag">Pandas</span>
+                <span class="tech-tag">Scikit-learn</span>
+                <span class="tech-tag">Jupyter</span>
+              </div>
+              <a
+                class="exp-certificate-link"
+                href="https://drive.google.com/file/d/1tf-wrfT9VPEGx0NtQmZqleYWhy8skFwD/view"
+                target="_blank"
+                rel="noreferrer"
+                >View Certificate
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path d="M7 7h10v10" />
+                  <path d="M7 17 17 7" /></svg
+              ></a>
+            </div>
+          </div>
+
+          <!-- Certifications Row -->
+          <div class="certs-section animate-fade-up">
+            <h3 class="certs-heading">Certifications</h3>
+            <div class="certs-grid">
+              <div class="cert-card">
+                <div class="cert-card__icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-lock-keyhole-icon lucide-lock-keyhole"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <circle cx="12" cy="16" r="1" />
+                    <rect x="3" y="10" width="18" height="12" rx="2" />
+                    <path d="M7 10V7a5 5 0 0 1 10 0v3" />
+                  </svg>
+                </div>
+                <div>
+                  <p class="cert-card__title">
+                    Privacy and Security in Online Social Media
+                  </p>
+                  <p class="cert-card__meta">NPTEL · Apr '25</p>
+                  <a
+                    class="cert-card__link"
+                    href="https://drive.google.com/file/d/1YeqhEXV4Y0ATGlX2s-qvjN37SX5o9nS-/view"
+                    target="_blank"
+                    rel="noreferrer"
+                    >View Certificate
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path d="M7 7h10v10" />
+                      <path d="M7 17 17 7" /></svg
+                  ></a>
+                </div>
+              </div>
+
+              <div class="cert-card">
+                <div class="cert-card__icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-book-check-icon lucide-book-check"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <path
+                      d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"
+                    />
+                    <path d="m9 9.5 2 2 4-4" />
+                  </svg>
+                </div>
+                <div>
+                  <p class="cert-card__title">Query Optimization</p>
+                  <p class="cert-card__meta">MongoDB · Jun '25</p>
+                  <a
+                    class="cert-card__link"
+                    href="https://drive.google.com/file/d/19xCCW-nUJj6rfIe8Lxum--aCN4OxLfpd/view"
+                    target="_blank"
+                    rel="noreferrer"
+                    >View Certificate
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path d="M7 7h10v10" />
+                      <path d="M7 17 17 7" /></svg
+                  ></a>
+                </div>
+              </div>
+
+              <div class="cert-card">
+                <div class="cert-card__icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-award-icon lucide-award"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <circle cx="12" cy="8" r="6" />
+                    <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11" />
+                  </svg>
+                </div>
+                <div>
+                  <p class="cert-card__title">
+                    Oracle Data Platform 2025 Certified Foundations Associate
+                  </p>
+                  <p class="cert-card__meta">Oracle · Mar 6, 2026</p>
+                  <a
+                    class="cert-card__link"
+                    href="https://drive.google.com/file/d/1k3BkGQVuHa0Rl1HkFRS2Y7OVCdC-1KOt/view?usp=sharing"
+                    target="_blank"
+                    rel="noreferrer"
+                    >View Certificate
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path d="M7 7h10v10" />
+                      <path d="M7 17 17 7" /></svg
+                  ></a>
+                </div>
+              </div>
+
+              <div class="cert-card">
+                <div class="cert-card__icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-cpu-icon lucide-cpu"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <rect width="16" height="16" x="4" y="4" rx="2" />
+                    <rect width="6" height="6" x="9" y="9" rx="1" />
+                    <path d="M15 2v2" />
+                    <path d="M15 20v2" />
+                    <path d="M2 15h2" />
+                    <path d="M2 9h2" />
+                    <path d="M20 15h2" />
+                    <path d="M20 9h2" />
+                    <path d="M9 2v2" />
+                    <path d="M9 20v2" />
+                  </svg>
+                </div>
+                <div>
+                  <p class="cert-card__title">
+                    Oracle Cloud Infrastructure 2025 Certified AI Foundations
+                    Associate
+                  </p>
+                  <p class="cert-card__meta">Oracle · Mar 14, 2026</p>
+                  <a
+                    class="cert-card__link"
+                    href="https://drive.google.com/file/d/1B0zm4EqiZFrdjNYJBVoNw9ZlV7TcY6f0/view?usp=sharing"
+                    target="_blank"
+                    rel="noreferrer"
+                    >View Certificate
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path d="M7 7h10v10" />
+                      <path d="M7 17 17 7" /></svg
+                  ></a>
                 </div>
               </div>
             </div>
-            <ul class="exp-points">
-              <li>Executed responsive web modules and backend services for internal applications</li>
-              <li>Designed UI components leading to 20% reduction in page load times</li>
-              <li>Built RESTful APIs with Node.js and Express.js integrated with MySQL</li>
-              <li>Collaborated on full-stack development, Git/GitHub, deployment & hosting</li>
-            </ul>
-            <div class="tech-tags">
-              <span class="tech-tag">HTML</span>
-              <span class="tech-tag">CSS</span>
-              <span class="tech-tag">JavaScript</span>
-              <span class="tech-tag">Node.js</span>
-              <span class="tech-tag">Express.js</span>
-              <span class="tech-tag">MySQL</span>
-            </div>
-            <a class="exp-certificate-link" href="https://drive.google.com/file/d/1iHdFhGXJK6_dJJeKgGjS6FfeuAAKHtKH/view" target="_blank" rel="noreferrer">View Certificate <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right" aria-hidden="true" focusable="false"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
-          </div>
-
-          <!-- Training Card -->
-          <div class="exp-card animate-slide-right">
-            <div class="exp-card__header">
-              <div class="exp-card__icon exp-card__icon--fuchsia">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-brain-circuit-icon lucide-brain-circuit" aria-hidden="true" focusable="false"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/><path d="M9 13a4.5 4.5 0 0 0 3-4"/><path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"/><path d="M3.477 10.896a4 4 0 0 1 .585-.396"/><path d="M6 18a4 4 0 0 1-1.967-.516"/><path d="M12 13h4"/><path d="M12 18h6a2 2 0 0 1 2 2v1"/><path d="M12 8h8"/><path d="M16 8V5a2 2 0 0 1 2-2"/><circle cx="16" cy="13" r=".5"/><circle cx="18" cy="3" r=".5"/><circle cx="20" cy="21" r=".5"/><circle cx="20" cy="8" r=".5"/></svg>
-              </div>
-              <div>
-                <h3 class="exp-card__role">Machine Learning Training</h3>
-                <p class="exp-card__company">Lovely Professional University</p>
-                <div class="exp-card__meta">
-                  <span class="exp-card__period">Jul '25</span>
-                  <span class="certified-badge">✓ Certified</span>
-                </div>
-              </div>
-            </div>
-            <ul class="exp-points">
-              <li>Core concepts: data preprocessing, model training, and evaluation</li>
-              <li>Tested ML models using Python and Scikit-learn on real-world datasets</li>
-              <li>Applied supervised learning: Linear Regression, Decision Trees, KNN</li>
-              <li>Worked with NumPy & Pandas for data analysis and manipulation</li>
-            </ul>
-            <div class="tech-tags">
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">NumPy</span>
-              <span class="tech-tag">Pandas</span>
-              <span class="tech-tag">Scikit-learn</span>
-              <span class="tech-tag">Jupyter</span>
-            </div>
-            <a class="exp-certificate-link" href="https://drive.google.com/file/d/1tf-wrfT9VPEGx0NtQmZqleYWhy8skFwD/view" target="_blank" rel="noreferrer">View Certificate <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right" aria-hidden="true" focusable="false"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
-          </div>
-
-        </div>
-
-        <!-- Certifications Row -->
-        <div class="certs-section animate-fade-up">
-          <h3 class="certs-heading">Certifications</h3>
-          <div class="certs-grid">
-
-            <div class="cert-card">
-              <div class="cert-card__icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lock-keyhole-icon lucide-lock-keyhole" aria-hidden="true" focusable="false"><circle cx="12" cy="16" r="1"/><rect x="3" y="10" width="18" height="12" rx="2"/><path d="M7 10V7a5 5 0 0 1 10 0v3"/></svg>
-              </div>
-              <div>
-                <p class="cert-card__title">Privacy and Security in Online Social Media</p>
-                <p class="cert-card__meta">NPTEL · Apr '25</p>
-                <a class="cert-card__link" href="https://drive.google.com/file/d/1YeqhEXV4Y0ATGlX2s-qvjN37SX5o9nS-/view" target="_blank" rel="noreferrer">View Certificate <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right" aria-hidden="true" focusable="false"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
-              </div>
-            </div>
-
-            <div class="cert-card">
-              <div class="cert-card__icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-check-icon lucide-book-check" aria-hidden="true" focusable="false"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"/><path d="m9 9.5 2 2 4-4"/></svg>
-              </div>
-              <div>
-                <p class="cert-card__title">Query Optimization</p>
-                <p class="cert-card__meta">MongoDB · Jun '25</p>
-                <a class="cert-card__link" href="https://drive.google.com/file/d/19xCCW-nUJj6rfIe8Lxum--aCN4OxLfpd/view" target="_blank" rel="noreferrer">View Certificate <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right" aria-hidden="true" focusable="false"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
-              </div>
-            </div>
-
           </div>
         </div>
+      </section>
 
-      </div>
-    </section>
+      <div class="section-divider"></div>
 
-    <div class="section-divider"></div>
-
-    <!-- ========================================================
+      <!-- ========================================================
          SECTION 6: ACHIEVEMENTS
          Counter cards (JS animates numbers on scroll)
          + two highlight achievement strips
          ======================================================== -->
-    <section id="achievements">
-      <div class="container">
+      <section id="achievements">
+        <div class="container">
+          <div class="section-header animate-fade-up">
+            <p class="section-label">My Wins</p>
+            <h2 class="section-title">
+              <span class="gradient-text">Achievements</span> & Stats
+            </h2>
+            <div class="section-underline"></div>
+          </div>
 
-        <div class="section-header animate-fade-up">
-          <p class="section-label">My Wins</p>
-          <h2 class="section-title"><span class="gradient-text">Achievements</span> & Stats</h2>
-          <div class="section-underline"></div>
-        </div>
-
-        <!--
+          <!--
           data-target  = final number to count to
           data-float   = "true" if decimal number
           data-prefix  = text before the number (e.g. "Top ")
           data-suffix  = text after the number  (e.g. "+", "%")
         -->
-        <div class="ach-grid" id="ach-grid">
-
-          <div class="ach-card ach-card--flip animate-fade-up stagger-1" data-target="100" data-suffix="+">
-            <div class="ach-card__inner">
-              <div class="ach-card__face ach-card__face--front">
-                <div class="ach-card__emoji">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap-icon lucide-zap" aria-hidden="true" focusable="false"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></svg>
+          <div class="ach-grid" id="ach-grid">
+            <div
+              class="ach-card ach-card--flip animate-fade-up stagger-1"
+              data-target="100"
+              data-suffix="+"
+            >
+              <div class="ach-card__inner">
+                <div class="ach-card__face ach-card__face--front">
+                  <div class="ach-card__emoji">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-zap-icon lucide-zap"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path
+                        d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"
+                      />
+                    </svg>
+                  </div>
+                  <div class="ach-card__value">
+                    <span class="counter">0</span>+
+                  </div>
+                  <div class="ach-card__label">LeetCode Problems</div>
+                  <div class="ach-card__desc">
+                    20% improvement in DSA skills
+                  </div>
                 </div>
-                <div class="ach-card__value"><span class="counter">0</span>+</div>
-                <div class="ach-card__label">LeetCode Problems</div>
-                <div class="ach-card__desc">20% improvement in DSA skills</div>
-              </div>
-              <div class="ach-card__face ach-card__face--back">
-                <p class="ach-card__back-title">Track My Progress</p>
-                <a class="ach-card__back-link" href="https://leetcode.com/u/maria_tejaswi/" target="_blank" rel="noreferrer">View LeetCode <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right" aria-hidden="true" focusable="false"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="ach-card ach-card--flip animate-fade-up stagger-2" data-target="30" data-prefix="Top ">
-            <div class="ach-card__inner">
-              <div class="ach-card__face ach-card__face--front">
-                <div class="ach-card__emoji">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trophy-icon lucide-trophy" aria-hidden="true" focusable="false"><path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"/><path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"/><path d="M18 9h1.5a1 1 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"/><path d="M6 9H4.5a1 1 0 0 1 0-5H6"/></svg>
+                <div class="ach-card__face ach-card__face--back">
+                  <p class="ach-card__back-title">Track My Progress</p>
+                  <a
+                    class="ach-card__back-link"
+                    href="https://leetcode.com/u/maria_tejaswi/"
+                    target="_blank"
+                    rel="noreferrer"
+                    >View LeetCode
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path d="M7 7h10v10" />
+                      <path d="M7 17 17 7" /></svg
+                  ></a>
                 </div>
-                <div class="ach-card__value">Top <span class="counter">0</span></div>
-                <div class="ach-card__label">CodeXtreme 2.0</div>
-                <div class="ach-card__desc">Neo Codeathon at LPU · Apr '25</div>
-              </div>
-              <div class="ach-card__face ach-card__face--back">
-                <p class="ach-card__back-title">Competition Certificate</p>
-                <a class="ach-card__back-link" href="https://drive.google.com/file/d/1qX4iDLABqh6lvSGOj1dz0_YDUapysuwx/view" target="_blank" rel="noreferrer">View Certificate <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right" aria-hidden="true" focusable="false"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
               </div>
             </div>
-          </div>
 
-          <div class="ach-card animate-fade-up stagger-3" data-target="7.95" data-float="true">
-            <div class="ach-card__emoji">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-graduation-cap-icon lucide-graduation-cap" aria-hidden="true" focusable="false"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>
+            <div
+              class="ach-card ach-card--flip animate-fade-up stagger-2"
+              data-target="30"
+              data-prefix="Top "
+            >
+              <div class="ach-card__inner">
+                <div class="ach-card__face ach-card__face--front">
+                  <div class="ach-card__emoji">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-trophy-icon lucide-trophy"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path
+                        d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"
+                      />
+                      <path
+                        d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"
+                      />
+                      <path d="M18 9h1.5a1 1 0 0 0 0-5H18" />
+                      <path d="M4 22h16" />
+                      <path
+                        d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"
+                      />
+                      <path d="M6 9H4.5a1 1 0 0 1 0-5H6" />
+                    </svg>
+                  </div>
+                  <div class="ach-card__value">
+                    Top <span class="counter">0</span>
+                  </div>
+                  <div class="ach-card__label">CodeXtreme 2.0</div>
+                  <div class="ach-card__desc">
+                    Neo Codeathon at LPU · Apr '25
+                  </div>
+                </div>
+                <div class="ach-card__face ach-card__face--back">
+                  <p class="ach-card__back-title">Competition Certificate</p>
+                  <a
+                    class="ach-card__back-link"
+                    href="https://drive.google.com/file/d/1qX4iDLABqh6lvSGOj1dz0_YDUapysuwx/view"
+                    target="_blank"
+                    rel="noreferrer"
+                    >View Certificate
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path d="M7 7h10v10" />
+                      <path d="M7 17 17 7" /></svg
+                  ></a>
+                </div>
+              </div>
             </div>
-            <div class="ach-card__value"><span class="counter">0</span></div>
-            <div class="ach-card__label">CGPA at LPU</div>
-            <div class="ach-card__desc">B.Tech Computer Science</div>
-          </div>
 
-          <div class="ach-card animate-fade-up stagger-4" data-target="90" data-suffix="%">
-            <div class="ach-card__emoji">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-library-big-icon lucide-library-big" aria-hidden="true" focusable="false"><rect width="8" height="18" x="3" y="3" rx="1"/><path d="M7 3v18"/><path d="M20.4 18.9c.2.5-.1 1.1-.6 1.3l-1.9.7c-.5.2-1.1-.1-1.3-.6L11.1 5.1c-.2-.5.1-1.1.6-1.3l1.9-.7c.5-.2 1.1.1 1.3.6Z"/></svg>
+            <div
+              class="ach-card ach-card--flip animate-fade-up stagger-3"
+              data-target="1"
+            >
+              <div class="ach-card__inner">
+                <div class="ach-card__face ach-card__face--front">
+                  <div class="ach-card__emoji">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-badge-check-icon lucide-badge-check"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path
+                        d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 0 2.74 0 4 4 0 0 1 4.78 4.77 4 4 0 0 0 .84 2.58 4 4 0 0 1 0 4.8 4 4 0 0 0-.84 2.58 4 4 0 0 1-4.78 4.77 4 4 0 0 0-2.74 0 4 4 0 0 1-4.78-4.77 4 4 0 0 0-.84-2.58 4 4 0 0 1 0-4.8 4 4 0 0 0 .84-2.58"
+                      />
+                      <path d="m9 12 2 2 4-4" />
+                    </svg>
+                  </div>
+                  <div class="ach-card__value">
+                    <span class="counter">0</span>
+                  </div>
+                  <div class="ach-card__label">NPTEL Certification</div>
+                  <div class="ach-card__desc">
+                    Privacy and Security in Online Social Media
+                  </div>
+                </div>
+                <div class="ach-card__face ach-card__face--back">
+                  <p class="ach-card__back-title">NPTEL Certificate</p>
+                  <a
+                    class="ach-card__back-link"
+                    href="https://drive.google.com/file/d/1YeqhEXV4Y0ATGlX2s-qvjN37SX5o9nS-/view"
+                    target="_blank"
+                    rel="noreferrer"
+                    >View Certificate
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path d="M7 7h10v10" />
+                      <path d="M7 17 17 7" /></svg
+                  ></a>
+                </div>
+              </div>
             </div>
-            <div class="ach-card__value"><span class="counter">0</span>%</div>
-            <div class="ach-card__label">Intermediate Score</div>
-            <div class="ach-card__desc">Sri Viswa Junior College</div>
           </div>
 
+          <div class="learning-now-card animate-fade-up stagger-3">
+            <p class="learning-now-card__label">Currently Upskilling</p>
+            <h3 class="learning-now-card__title">What I'm Learning Now</h3>
+            <p class="learning-now-card__text">
+              I am currently deepening my understanding of
+              <span class="learning-tech">System Design</span>,
+              <span class="learning-tech">Scalability</span>,
+              <span class="learning-tech">Data Flow Modeling</span>, and
+              <span class="learning-tech">Architecture Patterns</span> while
+              improving
+              <span class="learning-tech">Backend Development</span> and
+              <span class="learning-tech">Machine Learning</span> skills to
+              build reliable, data-driven solutions.
+            </p>
+          </div>
         </div>
+      </section>
 
-        <!-- Highlight strips -->
-        <div class="ach-strips">
-          <div class="ach-strip ach-strip--fuchsia animate-fade-up stagger-1">
-            <span class="ach-strip__emoji"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap-icon lucide-zap" aria-hidden="true" focusable="false"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></svg></span>
-            <div>
-              <p class="ach-strip__title">100+ LeetCode Problems Solved</p>
-              <p class="ach-strip__desc">20% improvement in DSA problem-solving concepts · Feb '26</p>
-            </div>
-          </div>
-          <div class="ach-strip ach-strip--fuchsia animate-fade-up stagger-2">
-            <span class="ach-strip__emoji"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trophy-icon lucide-trophy" aria-hidden="true" focusable="false"><path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"/><path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"/><path d="M18 9h1.5a1 1 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"/><path d="M6 9H4.5a1 1 0 0 1 0-5H6"/></svg></span>
-            <div>
-              <p class="ach-strip__title">Top 30 – CodeXtreme 2.0</p>
-              <p class="ach-strip__desc">Neo Codeathon at Lovely Professional University · Apr '25</p>
-            </div>
-          </div>
-        </div>
+      <div class="section-divider"></div>
 
-        <div class="learning-now-card animate-fade-up stagger-3">
-          <p class="learning-now-card__label">Currently Upskilling</p>
-          <h3 class="learning-now-card__title">What I'm Learning Now</h3>
-          <p class="learning-now-card__text">
-            I am currently deepening my understanding of
-            <span class="learning-tech">System Design</span>,
-            <span class="learning-tech">Scalability</span>,
-            <span class="learning-tech">Data Flow Modeling</span>, and
-            <span class="learning-tech">Architecture Patterns</span> while improving
-            <span class="learning-tech">Backend Development</span> and
-            <span class="learning-tech">Machine Learning</span> skills to build reliable,
-            data-driven solutions.
-          </p>
-        </div>
-
-      </div>
-    </section>
-
-    <div class="section-divider"></div>
-
-    <!-- ========================================================
+      <!-- ========================================================
          SECTION 7: CONTACT
          Contact info on the left, validated form on the right
          ======================================================== -->
-    <section id="contact">
-      <div class="container">
+      <section id="contact">
+        <div class="container">
+          <div class="section-header animate-fade-up">
+            <p class="section-label">Let's Connect</p>
+            <h2 class="section-title">
+              Get In <span class="gradient-text">Touch</span>
+            </h2>
+            <div class="section-underline"></div>
+            <p class="section-subtitle">
+              Have a project in mind or want to collaborate? I'd love to hear
+              from you.
+            </p>
+          </div>
 
-        <div class="section-header animate-fade-up">
-          <p class="section-label">Let's Connect</p>
-          <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
-          <div class="section-underline"></div>
-          <p class="section-subtitle">Have a project in mind or want to collaborate? I'd love to hear from you.</p>
-        </div>
-
-        <div class="contact-grid">
-
-          <!-- LEFT: Contact info -->
-          <div class="contact-info animate-slide-left">
-
-            <div class="contact-info-card">
-              <h3 class="contact-info-card__title">Contact Details</h3>
-              <a class="contact-detail-link" href="https://mail.google.com/mail/?view=cm&fs=1&to=mariatejaswiimandi@gmail.com&su=Portfolio%20Inquiry&body=Hi%20Maria%2C%0A%0AI%20visited%20your%20portfolio%20and%20would%20like%20to%20connect%20regarding%20" target="_blank" rel="noreferrer">
-                <div class="contact-detail-link__icon">
-                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                    <path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm0 2v.5l9 6 9-6V7l-9 6-9-6z"/>
-                  </svg>
-                </div>
-                <div>
-                  <p class="contact-detail-link__label">Email</p>
-                  <p class="contact-detail-link__value">mariatejaswiimandi@gmail.com</p>
-                </div>
-              </a>
-              <a class="contact-detail-link" href="tel:+917674839521">
-                <div class="contact-detail-link__icon">
-                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                    <path d="M6.6 10.8a15.3 15.3 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24c1.1.36 2.3.56 3.6.56a1 1 0 0 1 1 1V21a1 1 0 0 1-1 1C10.3 22 2 13.7 2 3a1 1 0 0 1 1-1h4.5a1 1 0 0 1 1 1c0 1.3.2 2.5.56 3.6a1 1 0 0 1-.24 1l-2.2 2.2z"/>
-                  </svg>
-                </div>
-                <div>
-                  <p class="contact-detail-link__label">Phone</p>
-                  <p class="contact-detail-link__value">+91 7674839521</p>
-                </div>
-              </a>
-            </div>
-
-            <div class="contact-info-card">
-              <h3 class="contact-info-card__title">Find Me Online</h3>
-              <div class="online-links-grid">
-                <a class="online-link" href="https://github.com/MariaTejaswi/"       target="_blank" rel="noreferrer" aria-label="GitHub profile">
-                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58 0-.29-.01-1.04-.02-2.05-3.34.73-4.04-1.61-4.04-1.61-.55-1.38-1.33-1.75-1.33-1.75-1.09-.74.08-.72.08-.72 1.2.09 1.83 1.23 1.83 1.23 1.07 1.84 2.81 1.31 3.49 1 .11-.77.42-1.31.76-1.61-2.67-.3-5.47-1.34-5.47-5.94 0-1.31.47-2.39 1.23-3.23-.12-.3-.53-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.48 11.48 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.65 1.65.24 2.87.12 3.17.77.84 1.23 1.92 1.23 3.23 0 4.61-2.8 5.64-5.48 5.94.43.37.81 1.09.81 2.21 0 1.6-.01 2.88-.01 3.27 0 .32.21.7.82.58C20.57 21.8 24 17.3 24 12 24 5.37 18.63 0 12 0z"/>
-                  </svg>
-                  GitHub
+          <div class="contact-grid">
+            <!-- LEFT: Contact info -->
+            <div class="contact-info animate-slide-left">
+              <div class="contact-info-card">
+                <h3 class="contact-info-card__title">Contact Details</h3>
+                <a
+                  class="contact-detail-link"
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=mariatejaswiimandi@gmail.com&su=Portfolio%20Inquiry&body=Hi%20Maria%2C%0A%0AI%20visited%20your%20portfolio%20and%20would%20like%20to%20connect%20regarding%20"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <div class="contact-detail-link__icon">
+                    <svg
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path
+                        d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm0 2v.5l9 6 9-6V7l-9 6-9-6z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="contact-detail-link__label">Email</p>
+                    <p class="contact-detail-link__value">
+                      mariatejaswiimandi@gmail.com
+                    </p>
+                  </div>
                 </a>
-                <a class="online-link" href="https://linkedin.com/in/maria-tejaswi/" target="_blank" rel="noreferrer">in &nbsp;LinkedIn</a>
+                <a class="contact-detail-link" href="tel:+917674839521">
+                  <div class="contact-detail-link__icon">
+                    <svg
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path
+                        d="M6.6 10.8a15.3 15.3 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24c1.1.36 2.3.56 3.6.56a1 1 0 0 1 1 1V21a1 1 0 0 1-1 1C10.3 22 2 13.7 2 3a1 1 0 0 1 1-1h4.5a1 1 0 0 1 1 1c0 1.3.2 2.5.56 3.6a1 1 0 0 1-.24 1l-2.2 2.2z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="contact-detail-link__label">Phone</p>
+                    <p class="contact-detail-link__value">+91 7674839521</p>
+                  </div>
+                </a>
               </div>
-            </div>
 
-            <!-- Availability indicator -->
-            <div class="availability-banner">
-              <div class="pulse-dot"></div>
-              <div>
-                <p class="availability-banner__title">Available for Opportunities</p>
-                <p class="availability-banner__desc">Open to internships and full-time roles</p>
-              </div>
-            </div>
-
-          </div>
-
-          <!-- RIGHT: Contact Form -->
-          <!-- JS handles validation in script.js -->
-          <div class="contact-form-wrapper animate-slide-right">
-            <div class="contact-form-card">
-
-              <div class="form-row-two">
-                <div class="form-group">
-                  <input type="text"  id="form-name"    placeholder="Your Name"  aria-label="Name" />
-                  <p class="form-error" id="err-name"></p>
+              <div class="contact-info-card">
+                <h3 class="contact-info-card__title">Find Me Online</h3>
+                <div class="online-links-grid">
+                  <a
+                    class="online-link"
+                    href="https://github.com/MariaTejaswi/"
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="GitHub profile"
+                  >
+                    <svg
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path
+                        d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58 0-.29-.01-1.04-.02-2.05-3.34.73-4.04-1.61-4.04-1.61-.55-1.38-1.33-1.75-1.33-1.75-1.09-.74.08-.72.08-.72 1.2.09 1.83 1.23 1.83 1.23 1.07 1.84 2.81 1.31 3.49 1 .11-.77.42-1.31.76-1.61-2.67-.3-5.47-1.34-5.47-5.94 0-1.31.47-2.39 1.23-3.23-.12-.3-.53-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.48 11.48 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.65 1.65.24 2.87.12 3.17.77.84 1.23 1.92 1.23 3.23 0 4.61-2.8 5.64-5.48 5.94.43.37.81 1.09.81 2.21 0 1.6-.01 2.88-.01 3.27 0 .32.21.7.82.58C20.57 21.8 24 17.3 24 12 24 5.37 18.63 0 12 0z"
+                      />
+                    </svg>
+                    GitHub
+                  </a>
+                  <a
+                    class="online-link"
+                    href="https://linkedin.com/in/maria-tejaswi/"
+                    target="_blank"
+                    rel="noreferrer"
+                    >in &nbsp;LinkedIn</a
+                  >
                 </div>
-                <div class="form-group">
-                  <input type="email" id="form-email"   placeholder="Your Email" aria-label="Email" />
-                  <p class="form-error" id="err-email"></p>
+              </div>
+
+              <!-- Availability indicator -->
+              <div class="availability-banner">
+                <div class="pulse-dot"></div>
+                <div>
+                  <p class="availability-banner__title">
+                    Available for Opportunities
+                  </p>
+                  <p class="availability-banner__desc">
+                    Open to internships and full-time roles
+                  </p>
                 </div>
               </div>
+            </div>
 
-              <div class="form-group">
-                <input type="text" id="form-subject" placeholder="Subject" aria-label="Subject" />
-                <p class="form-error" id="err-subject"></p>
+            <!-- RIGHT: Contact Form -->
+            <!-- JS handles validation in script.js -->
+            <div class="contact-form-wrapper animate-slide-right">
+              <div class="contact-form-card">
+                <div class="form-row-two">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      id="form-name"
+                      placeholder="Your Name"
+                      aria-label="Name"
+                    />
+                    <p class="form-error" id="err-name"></p>
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      id="form-email"
+                      placeholder="Your Email"
+                      aria-label="Email"
+                    />
+                    <p class="form-error" id="err-email"></p>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <input
+                    type="text"
+                    id="form-subject"
+                    placeholder="Subject"
+                    aria-label="Subject"
+                  />
+                  <p class="form-error" id="err-subject"></p>
+                </div>
+
+                <div class="form-group">
+                  <textarea
+                    id="form-message"
+                    rows="5"
+                    placeholder="Your Message..."
+                    aria-label="Message"
+                  ></textarea>
+                  <p class="form-error" id="err-message"></p>
+                </div>
+
+                <button
+                  class="submit-btn"
+                  id="submit-btn"
+                  onclick="submitContactForm()"
+                >
+                  <span id="submit-btn-text">✉ Send Message</span>
+                </button>
               </div>
-
-              <div class="form-group">
-                <textarea id="form-message" rows="5" placeholder="Your Message..." aria-label="Message"></textarea>
-                <p class="form-error" id="err-message"></p>
-              </div>
-
-              <button class="submit-btn" id="submit-btn" onclick="submitContactForm()">
-                <span id="submit-btn-text">✉ Send Message</span>
-              </button>
-
             </div>
           </div>
-
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
-  </main>
-
-  <!-- ============================================================
+    <!-- ============================================================
        FOOTER
        Logo, social links, copyright
        ============================================================ -->
-  <footer>
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <span class="footer-logo" onclick="window.scrollTo({top:0,behavior:'smooth'})">Portfolio</span>
-        <p class="footer-tagline">Full Stack Developer · MERN Stack</p>
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span
+            class="footer-logo"
+            onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+            >Portfolio</span
+          >
+          <p class="footer-tagline">Full Stack Developer · MERN Stack</p>
+        </div>
+        <div class="footer-socials">
+          <a
+            class="social-icon-btn"
+            href="https://github.com/MariaTejaswi/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="GitHub"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path
+                d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58 0-.29-.01-1.04-.02-2.05-3.34.73-4.04-1.61-4.04-1.61-.55-1.38-1.33-1.75-1.33-1.75-1.09-.74.08-.72.08-.72 1.2.09 1.83 1.23 1.83 1.23 1.07 1.84 2.81 1.31 3.49 1 .11-.77.42-1.31.76-1.61-2.67-.3-5.47-1.34-5.47-5.94 0-1.31.47-2.39 1.23-3.23-.12-.3-.53-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.48 11.48 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.65 1.65.24 2.87.12 3.17.77.84 1.23 1.92 1.23 3.23 0 4.61-2.8 5.64-5.48 5.94.43.37.81 1.09.81 2.21 0 1.6-.01 2.88-.01 3.27 0 .32.21.7.82.58C20.57 21.8 24 17.3 24 12 24 5.37 18.63 0 12 0z"
+              />
+            </svg>
+          </a>
+          <a
+            class="social-icon-btn"
+            href="https://linkedin.com/in/maria-tejaswi/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="LinkedIn"
+            >in</a
+          >
+          <a
+            class="social-icon-btn"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=mariatejaswiimandi@gmail.com&su=Portfolio%20Inquiry&body=Hi%20Maria%2C%0A%0AI%20visited%20your%20portfolio%20and%20would%20like%20to%20connect%20regarding%20"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Email"
+            >@</a
+          >
+        </div>
+        <p class="footer-copy">Made with ❤️ by Imandi Maria Tejaswi</p>
       </div>
-      <div class="footer-socials">
-        <a class="social-icon-btn" href="https://github.com/MariaTejaswi/"       target="_blank" rel="noreferrer" aria-label="GitHub">
-          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58 0-.29-.01-1.04-.02-2.05-3.34.73-4.04-1.61-4.04-1.61-.55-1.38-1.33-1.75-1.33-1.75-1.09-.74.08-.72.08-.72 1.2.09 1.83 1.23 1.83 1.23 1.07 1.84 2.81 1.31 3.49 1 .11-.77.42-1.31.76-1.61-2.67-.3-5.47-1.34-5.47-5.94 0-1.31.47-2.39 1.23-3.23-.12-.3-.53-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.48 11.48 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.65 1.65.24 2.87.12 3.17.77.84 1.23 1.92 1.23 3.23 0 4.61-2.8 5.64-5.48 5.94.43.37.81 1.09.81 2.21 0 1.6-.01 2.88-.01 3.27 0 .32.21.7.82.58C20.57 21.8 24 17.3 24 12 24 5.37 18.63 0 12 0z"/>
-          </svg>
-        </a>
-        <a class="social-icon-btn" href="https://linkedin.com/in/maria-tejaswi/" target="_blank" rel="noreferrer" aria-label="LinkedIn">in</a>
-        <a class="social-icon-btn" href="https://mail.google.com/mail/?view=cm&fs=1&to=mariatejaswiimandi@gmail.com&su=Portfolio%20Inquiry&body=Hi%20Maria%2C%0A%0AI%20visited%20your%20portfolio%20and%20would%20like%20to%20connect%20regarding%20" target="_blank" rel="noreferrer" aria-label="Email">@</a>
-      </div>
-      <p class="footer-copy">Made with ❤️ by Imandi Maria Tejaswi</p>
-    </div>
-  </footer>
+    </footer>
 
-  <!-- Main JavaScript -->
-  <script src="script.js"></script>
-
-</body>
+    <!-- Main JavaScript -->
+    <script src="script.js"></script>
+  </body>
 </html>
